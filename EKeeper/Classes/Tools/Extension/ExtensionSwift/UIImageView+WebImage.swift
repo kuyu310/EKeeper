@@ -19,7 +19,7 @@ extension UIImageView {
         
         // 处理 URL
         guard let urlString = urlString,
-            url = URL(string: urlString) else {
+            let url = URL(string: urlString) else {
             // 设置占位图像
             image = placeholderImage
             

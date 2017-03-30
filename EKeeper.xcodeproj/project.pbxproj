@@ -21,7 +21,6 @@
 		E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; };
 		E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; };
-		E43233B81E8CADF300C980D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; };
 		E43233B91E8CADF300C980D2 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */; };
 		E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C01E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m */; };
@@ -38,7 +37,6 @@
 		E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */; };
 		E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */; };
 		E43233F01E8CAE9A00C980D2 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */; };
-		E43233F11E8CAE9A00C980D2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */; };
 		E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */; };
 		E43233F31E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */; };
 		E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */; };
@@ -47,6 +45,33 @@
 		E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */; };
 		E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */; };
 		E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */; };
+		E43233FC1E8CB0DF00C980D2 /* RCinterfacePackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */; };
+		E43233FF1E8CB23A00C980D2 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233FE1E8CB23A00C980D2 /* common.swift */; };
+		E43234011E8CB3FD00C980D2 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234001E8CB3FD00C980D2 /* SafariServices.framework */; };
+		E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234021E8CB40900C980D2 /* Photos.framework */; };
+		E43234051E8CB41200C980D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234041E8CB41200C980D2 /* UIKit.framework */; };
+		E43234071E8CB41A00C980D2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234061E8CB41A00C980D2 /* SystemConfiguration.framework */; };
+		E43234091E8CB42200C980D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234081E8CB42200C980D2 /* QuartzCore.framework */; };
+		E432340B1E8CB43400C980D2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432340A1E8CB43400C980D2 /* OpenGLES.framework */; };
+		E432340D1E8CB43B00C980D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432340C1E8CB43B00C980D2 /* MapKit.framework */; };
+		E432340F1E8CB44600C980D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E432340E1E8CB44600C980D2 /* libz.tbd */; };
+		E43234111E8CB45000C980D2 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234101E8CB45000C980D2 /* libxml2.tbd */; };
+		E43234131E8CB45800C980D2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234121E8CB45800C980D2 /* libstdc++.tbd */; };
+		E43234151E8CB46200C980D2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234141E8CB46200C980D2 /* libsqlite3.0.tbd */; };
+		E43234171E8CB46A00C980D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234161E8CB46A00C980D2 /* AdSupport.framework */; };
+		E43234191E8CB47200C980D2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234181E8CB47200C980D2 /* libc++.tbd */; };
+		E432341B1E8CB47E00C980D2 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E432341A1E8CB47E00C980D2 /* libc++abi.tbd */; };
+		E43234211E8CB4AB00C980D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432341C1E8CB4AB00C980D2 /* CoreGraphics.framework */; };
+		E43234221E8CB4AB00C980D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432341D1E8CB4AB00C980D2 /* CoreLocation.framework */; };
+		E43234231E8CB4AB00C980D2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432341E1E8CB4AB00C980D2 /* CoreMedia.framework */; };
+		E43234241E8CB4AB00C980D2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432341F1E8CB4AB00C980D2 /* CoreTelephony.framework */; };
+		E43234251E8CB4AB00C980D2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234201E8CB4AB00C980D2 /* CoreVideo.framework */; };
+		E43234271E8CB4B300C980D2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234261E8CB4B300C980D2 /* ImageIO.framework */; };
+		E43234291E8CB4C100C980D2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234281E8CB4C100C980D2 /* CoreAudio.framework */; };
+		E432342B1E8CB4C800C980D2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342A1E8CB4C800C980D2 /* CFNetwork.framework */; };
+		E432342D1E8CB4D800C980D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342C1E8CB4D800C980D2 /* AVFoundation.framework */; };
+		E432342F1E8CB4E300C980D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */; };
+		E43234311E8CB4EB00C980D2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */; };
 		E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */; };
 		E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D641E8C836B00BDF6E2 /* ViewController.swift */; };
 		E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D661E8C836B00BDF6E2 /* Main.storyboard */; };
@@ -219,7 +244,6 @@
 		E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
@@ -228,6 +252,33 @@
 		E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 		E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
+		E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCinterfacePackage.swift; path = ThirdPartyEncapsulation/RCinterfacePackage.swift; sourceTree = "<group>"; };
+		E43233FE1E8CB23A00C980D2 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		E43234001E8CB3FD00C980D2 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		E43234021E8CB40900C980D2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E43234041E8CB41200C980D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E43234061E8CB41A00C980D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E43234081E8CB42200C980D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E432340A1E8CB43400C980D2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E432340C1E8CB43B00C980D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E432340E1E8CB44600C980D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E43234101E8CB45000C980D2 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		E43234121E8CB45800C980D2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		E43234141E8CB46200C980D2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		E43234161E8CB46A00C980D2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E43234181E8CB47200C980D2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E432341A1E8CB47E00C980D2 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		E432341C1E8CB4AB00C980D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E432341D1E8CB4AB00C980D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E432341E1E8CB4AB00C980D2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E432341F1E8CB4AB00C980D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E43234201E8CB4AB00C980D2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E43234261E8CB4B300C980D2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E43234281E8CB4C100C980D2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E432342A1E8CB4C800C980D2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E432342C1E8CB4D800C980D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E46E7D5F1E8C836B00BDF6E2 /* EKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46E7D641E8C836B00BDF6E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -249,7 +300,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43233B81E8CADF300C980D2 /* pop.framework in Frameworks */,
+				E43234311E8CB4EB00C980D2 /* AssetsLibrary.framework in Frameworks */,
+				E432342F1E8CB4E300C980D2 /* AudioToolbox.framework in Frameworks */,
+				E432342D1E8CB4D800C980D2 /* AVFoundation.framework in Frameworks */,
+				E432342B1E8CB4C800C980D2 /* CFNetwork.framework in Frameworks */,
+				E43234291E8CB4C100C980D2 /* CoreAudio.framework in Frameworks */,
+				E43234271E8CB4B300C980D2 /* ImageIO.framework in Frameworks */,
+				E43234211E8CB4AB00C980D2 /* CoreGraphics.framework in Frameworks */,
+				E43234221E8CB4AB00C980D2 /* CoreLocation.framework in Frameworks */,
+				E43234231E8CB4AB00C980D2 /* CoreMedia.framework in Frameworks */,
+				E43234241E8CB4AB00C980D2 /* CoreTelephony.framework in Frameworks */,
+				E43234251E8CB4AB00C980D2 /* CoreVideo.framework in Frameworks */,
+				E432341B1E8CB47E00C980D2 /* libc++abi.tbd in Frameworks */,
+				E43234191E8CB47200C980D2 /* libc++.tbd in Frameworks */,
+				E43234171E8CB46A00C980D2 /* AdSupport.framework in Frameworks */,
+				E43234151E8CB46200C980D2 /* libsqlite3.0.tbd in Frameworks */,
+				E43234131E8CB45800C980D2 /* libstdc++.tbd in Frameworks */,
+				E43234111E8CB45000C980D2 /* libxml2.tbd in Frameworks */,
+				E432340F1E8CB44600C980D2 /* libz.tbd in Frameworks */,
+				E432340D1E8CB43B00C980D2 /* MapKit.framework in Frameworks */,
+				E432340B1E8CB43400C980D2 /* OpenGLES.framework in Frameworks */,
+				E43234091E8CB42200C980D2 /* QuartzCore.framework in Frameworks */,
+				E43234071E8CB41A00C980D2 /* SystemConfiguration.framework in Frameworks */,
+				E43234051E8CB41200C980D2 /* UIKit.framework in Frameworks */,
+				E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */,
+				E43234011E8CB3FD00C980D2 /* SafariServices.framework in Frameworks */,
 				E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */,
 				E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */,
 				E43233A81E8CAD0E00C980D2 /* Alamofire.framework in Frameworks */,
@@ -276,6 +351,31 @@
 		0BF22D463B0F479C11EE0488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */,
+				E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */,
+				E432342C1E8CB4D800C980D2 /* AVFoundation.framework */,
+				E432342A1E8CB4C800C980D2 /* CFNetwork.framework */,
+				E43234281E8CB4C100C980D2 /* CoreAudio.framework */,
+				E43234261E8CB4B300C980D2 /* ImageIO.framework */,
+				E432341C1E8CB4AB00C980D2 /* CoreGraphics.framework */,
+				E432341D1E8CB4AB00C980D2 /* CoreLocation.framework */,
+				E432341E1E8CB4AB00C980D2 /* CoreMedia.framework */,
+				E432341F1E8CB4AB00C980D2 /* CoreTelephony.framework */,
+				E43234201E8CB4AB00C980D2 /* CoreVideo.framework */,
+				E432341A1E8CB47E00C980D2 /* libc++abi.tbd */,
+				E43234181E8CB47200C980D2 /* libc++.tbd */,
+				E43234161E8CB46A00C980D2 /* AdSupport.framework */,
+				E43234141E8CB46200C980D2 /* libsqlite3.0.tbd */,
+				E43234121E8CB45800C980D2 /* libstdc++.tbd */,
+				E43234101E8CB45000C980D2 /* libxml2.tbd */,
+				E432340E1E8CB44600C980D2 /* libz.tbd */,
+				E432340C1E8CB43B00C980D2 /* MapKit.framework */,
+				E432340A1E8CB43400C980D2 /* OpenGLES.framework */,
+				E43234081E8CB42200C980D2 /* QuartzCore.framework */,
+				E43234061E8CB41A00C980D2 /* SystemConfiguration.framework */,
+				E43234041E8CB41200C980D2 /* UIKit.framework */,
+				E43234021E8CB40900C980D2 /* Photos.framework */,
+				E43234001E8CB3FD00C980D2 /* SafariServices.framework */,
 				E43233B61E8CAD9100C980D2 /* pop.framework */,
 				23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */,
 			);
@@ -294,6 +394,8 @@
 		E43233231E8C915500C980D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E43233FD1E8CB22F00C980D2 /* Public */,
+				E43233FA1E8CAFFC00C980D2 /* ThirdPartyEncapsulation(第三方封装) */,
 				E43233241E8C915500C980D2 /* Model */,
 				E43233251E8C915500C980D2 /* Tools */,
 				E43233261E8C915500C980D2 /* View */,
@@ -479,7 +581,6 @@
 				E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */,
 				E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */,
 				E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */,
-				E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */,
 				E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */,
 				E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */,
 				E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */,
@@ -490,6 +591,22 @@
 				E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */,
 			);
 			path = ExtensionSwift;
+			sourceTree = "<group>";
+		};
+		E43233FA1E8CAFFC00C980D2 /* ThirdPartyEncapsulation(第三方封装) */ = {
+			isa = PBXGroup;
+			children = (
+				E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */,
+			);
+			name = "ThirdPartyEncapsulation(第三方封装)";
+			sourceTree = "<group>";
+		};
+		E43233FD1E8CB22F00C980D2 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				E43233FE1E8CB23A00C980D2 /* common.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		E46E7D561E8C836A00BDF6E2 = {
@@ -825,12 +942,13 @@
 				E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */,
 				E43233EB1E8CAE9A00C980D2 /* UIScreen+CZAddition.m in Sources */,
 				E43233E81E8CAE9A00C980D2 /* UIButton+CZAddition.m in Sources */,
+				E43233FC1E8CB0DF00C980D2 /* RCinterfacePackage.swift in Sources */,
 				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
+				E43233FF1E8CB23A00C980D2 /* common.swift in Sources */,
 				E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */,
 				E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */,
 				E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,
-				E43233F11E8CAE9A00C980D2 /* String+Extensions.swift in Sources */,
 				E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */,
 				E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */,
 				E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */,

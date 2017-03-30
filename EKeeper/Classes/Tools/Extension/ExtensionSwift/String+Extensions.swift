@@ -19,7 +19,7 @@ extension String {
         let pattern = "<a href=\"(.*?)\".*?>(.*?)</a>"
         
         // 1. 创建正则表达式，并且匹配第一项
-        guard let regx = try? RegularExpression(pattern: pattern, options: []),
+        guard let regx = try? NSRegularExpression(pattern: pattern, options: []),
             let result = regx.firstMatch(in: self, options: [], range: NSRange(location: 0, length: characters.count))
             else {
                 return nil

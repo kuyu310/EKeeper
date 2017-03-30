@@ -11,5 +11,8 @@
 
 #import "SVProgressHUD.h"
 #import "BabyBluetooth.h"
-
+//导入融云框架的头文件
+#import <RongIMKit/RongIMKit.h>
+//导入扩展库forOc
+#import "CZAdditions.h"
 #endif /* E_housekeeper_Bridging_Header_h */
