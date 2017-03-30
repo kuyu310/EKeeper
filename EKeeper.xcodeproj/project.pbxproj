@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B366111399550374876D6280 /* Pods_EKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */; };
 		E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */; };
 		E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D641E8C836B00BDF6E2 /* ViewController.swift */; };
 		E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D661E8C836B00BDF6E2 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D5F1E8C836B00BDF6E2 /* EKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46E7D641E8C836B00BDF6E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		E46E7D7E1E8C836B00BDF6E2 /* EKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKeeperUITests.swift; sourceTree = "<group>"; };
 		E46E7D841E8C836B00BDF6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B366111399550374876D6280 /* Pods_EKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF22D463B0F479C11EE0488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3967E5F9941D40438A6C6A57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */,
+				1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E43233231E8C915500C980D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E43233241E8C915500C980D2 /* Model */,
+				E43233251E8C915500C980D2 /* Tools */,
+				E43233261E8C915500C980D2 /* View */,
+				E432332C1E8C915500C980D2 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E43233241E8C915500C980D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E43233251E8C915500C980D2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E43233261E8C915500C980D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E43233271E8C915500C980D2 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E43233271E8C915500C980D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E43233281E8C915500C980D2 /* OAuth */,
+				E43233291E8C915500C980D2 /* VisitorView */,
+				E432332A1E8C915500C980D2 /* 主控制器 */,
+				E432332B1E8C915500C980D2 /* 测试 */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E43233281E8C915500C980D2 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		E43233291E8C915500C980D2 /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VisitorView;
+			sourceTree = "<group>";
+		};
+		E432332A1E8C915500C980D2 /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "主控制器";
+			sourceTree = "<group>";
+		};
+		E432332B1E8C915500C980D2 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		E432332C1E8C915500C980D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E46E7D561E8C836A00BDF6E2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +182,8 @@
 				E46E7D761E8C836B00BDF6E2 /* EKeeperTests */,
 				E46E7D811E8C836B00BDF6E2 /* EKeeperUITests */,
 				E46E7D601E8C836B00BDF6E2 /* Products */,
+				3967E5F9941D40438A6C6A57 /* Pods */,
+				0BF22D463B0F479C11EE0488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +200,7 @@
 		E46E7D611E8C836B00BDF6E2 /* EKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				E43233231E8C915500C980D2 /* Classes */,
 				E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */,
 				E46E7D641E8C836B00BDF6E2 /* ViewController.swift */,
 				E46E7D661E8C836B00BDF6E2 /* Main.storyboard */,
@@ -132,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46E7D871E8C836B00BDF6E2 /* Build configuration list for PBXNativeTarget "EKeeper" */;
 			buildPhases = (
+				F618D3C8A965300EF8465BCC /* [CP] Check Pods Manifest.lock */,
 				E46E7D5B1E8C836B00BDF6E2 /* Sources */,
 				E46E7D5C1E8C836B00BDF6E2 /* Frameworks */,
 				E46E7D5D1E8C836B00BDF6E2 /* Resources */,
+				51B82D331F15218A82049C4B /* [CP] Embed Pods Frameworks */,
+				02A3E72534BF8B426B6CA5F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +363,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A3E72534BF8B426B6CA5F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B82D331F15218A82049C4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F618D3C8A965300EF8465BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E46E7D5B1E8C836B00BDF6E2 /* Sources */ = {
@@ -411,6 +566,7 @@
 		};
 		E46E7D881E8C836B00BDF6E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
@@ -424,6 +580,7 @@
 		};
 		E46E7D891E8C836B00BDF6E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
@@ -512,6 +669,7 @@
 				E46E7D891E8C836B00BDF6E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E46E7D8A1E8C836B00BDF6E2 /* Build configuration list for PBXNativeTarget "EKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +678,7 @@
 				E46E7D8C1E8C836B00BDF6E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E46E7D8D1E8C836B00BDF6E2 /* Build configuration list for PBXNativeTarget "EKeeperUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +687,7 @@
 				E46E7D8F1E8C836B00BDF6E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
