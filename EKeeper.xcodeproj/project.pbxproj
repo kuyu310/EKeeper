@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43233301E8C93CA00C980D2 /* EKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 		E46E7D5F1E8C836B00BDF6E2 /* EKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46E7D641E8C836B00BDF6E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 				E46E7D691E8C836B00BDF6E2 /* Assets.xcassets */,
 				E46E7D6B1E8C836B00BDF6E2 /* LaunchScreen.storyboard */,
 				E46E7D6E1E8C836B00BDF6E2 /* Info.plist */,
+				E43233301E8C93CA00C980D2 /* EKeeper-Bridging-Header.h */,
 			);
 			path = EKeeper;
 			sourceTree = "<group>";
@@ -574,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/授权棒银企管家/银企管家/EKeeper/EKeeper/EKeeper/EKeeper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -588,6 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/授权棒银企管家/银企管家/EKeeper/EKeeper/EKeeper/EKeeper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
