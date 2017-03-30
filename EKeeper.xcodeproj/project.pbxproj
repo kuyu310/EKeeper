@@ -7,7 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B366111399550374876D6280 /* Pods_EKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */; };
+		E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233651E8CABAE00C980D2 /* BabyBluetooth.m */; };
+		E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233671E8CABAE00C980D2 /* BabyCallback.m */; };
+		E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233691E8CABAE00C980D2 /* BabyCentralManager.m */; };
+		E43233791E8CABAE00C980D2 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = E432336B1E8CABAE00C980D2 /* BabyDefine.m */; };
+		E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E432336D1E8CABAE00C980D2 /* BabyOptions.m */; };
+		E432337B1E8CABAE00C980D2 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E432336F1E8CABAE00C980D2 /* BabyPeripheralManager.m */; };
+		E432337C1E8CABAE00C980D2 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233711E8CABAE00C980D2 /* BabyRhythm.m */; };
+		E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233731E8CABAE00C980D2 /* BabySpeaker.m */; };
+		E432337E1E8CABAE00C980D2 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233751E8CABAE00C980D2 /* BabyToy.m */; };
+		E43233A81E8CAD0E00C980D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233951E8CACEB00C980D2 /* Alamofire.framework */; };
+		E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233951E8CACEB00C980D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; };
+		E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; };
+		E43233B81E8CADF300C980D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; };
+		E43233B91E8CADF300C980D2 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */; };
+		E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C01E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m */; };
+		E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C21E8CAE9A00C980D2 /* NSObject+CZRuntime.m */; };
+		E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C41E8CAE9A00C980D2 /* NSString+CZBase64.m */; };
+		E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C61E8CAE9A00C980D2 /* NSString+CZHash.m */; };
+		E43233E71E8CAE9A00C980D2 /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C81E8CAE9A00C980D2 /* NSString+CZPath.m */; };
+		E43233E81E8CAE9A00C980D2 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233CA1E8CAE9A00C980D2 /* UIButton+CZAddition.m */; };
+		E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233CC1E8CAE9A00C980D2 /* UIColor+CZAddition.m */; };
+		E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233CE1E8CAE9A00C980D2 /* UILabel+CZAddition.m */; };
+		E43233EB1E8CAE9A00C980D2 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233D01E8CAE9A00C980D2 /* UIScreen+CZAddition.m */; };
+		E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233D21E8CAE9A00C980D2 /* UIView+CZAddition.m */; };
+		E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233D41E8CAE9A00C980D2 /* UIViewController+CZAddition.m */; };
+		E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */; };
+		E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */; };
+		E43233F01E8CAE9A00C980D2 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */; };
+		E43233F11E8CAE9A00C980D2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */; };
+		E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */; };
+		E43233F31E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */; };
+		E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */; };
+		E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */; };
+		E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */; };
+		E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */; };
+		E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */; };
+		E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */; };
 		E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */; };
 		E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D641E8C836B00BDF6E2 /* ViewController.swift */; };
 		E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D661E8C836B00BDF6E2 /* Main.storyboard */; };
@@ -18,6 +57,83 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E43233941E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		E43233961E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		E43233981E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		E432339A1E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		E432339C1E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		E432339E1E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		E43233A01E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		E43233A41E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		E43233A61E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		E43233AA1E8CAD0E00C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		E43233AE1E8CAD1200C980D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 		E46E7D741E8C836B00BDF6E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E46E7D571E8C836A00BDF6E2 /* Project object */;
@@ -34,10 +150,84 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E43233821E8CACA800C980D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */,
+				E43233B91E8CADF300C980D2 /* pop.framework in Embed Frameworks */,
+				E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43233301E8C93CA00C980D2 /* EKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
+		E43233641E8CABAE00C980D2 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		E43233651E8CABAE00C980D2 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		E43233661E8CABAE00C980D2 /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		E43233671E8CABAE00C980D2 /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		E43233681E8CABAE00C980D2 /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		E43233691E8CABAE00C980D2 /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		E432336A1E8CABAE00C980D2 /* BabyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyDefine.h; sourceTree = "<group>"; };
+		E432336B1E8CABAE00C980D2 /* BabyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyDefine.m; sourceTree = "<group>"; };
+		E432336C1E8CABAE00C980D2 /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		E432336D1E8CABAE00C980D2 /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		E432336E1E8CABAE00C980D2 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		E432336F1E8CABAE00C980D2 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		E43233701E8CABAE00C980D2 /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		E43233711E8CABAE00C980D2 /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		E43233721E8CABAE00C980D2 /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		E43233731E8CABAE00C980D2 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		E43233741E8CABAE00C980D2 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		E43233751E8CABAE00C980D2 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "EKeeper/OtherFramework/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "EKeeper/OtherFramework/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		E43233B61E8CAD9100C980D2 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../../Users/limeng/Library/Developer/Xcode/DerivedData/EKeeper-emwdkdvjqnivvkdlygkwspjcpmfm/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
+		E43233BC1E8CAE9A00C980D2 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		E43233BD1E8CAE9A00C980D2 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		E43233BF1E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		E43233C01E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		E43233C11E8CAE9A00C980D2 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		E43233C21E8CAE9A00C980D2 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		E43233C31E8CAE9A00C980D2 /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		E43233C41E8CAE9A00C980D2 /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		E43233C51E8CAE9A00C980D2 /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		E43233C61E8CAE9A00C980D2 /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		E43233C71E8CAE9A00C980D2 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		E43233C81E8CAE9A00C980D2 /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		E43233C91E8CAE9A00C980D2 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		E43233CA1E8CAE9A00C980D2 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		E43233CB1E8CAE9A00C980D2 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		E43233CC1E8CAE9A00C980D2 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		E43233CD1E8CAE9A00C980D2 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		E43233CE1E8CAE9A00C980D2 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		E43233CF1E8CAE9A00C980D2 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		E43233D01E8CAE9A00C980D2 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		E43233D11E8CAE9A00C980D2 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		E43233D21E8CAE9A00C980D2 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		E43233D31E8CAE9A00C980D2 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		E43233D41E8CAE9A00C980D2 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
+		E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
 		E46E7D5F1E8C836B00BDF6E2 /* EKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46E7D641E8C836B00BDF6E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +249,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B366111399550374876D6280 /* Pods_EKeeper.framework in Frameworks */,
+				E43233B81E8CADF300C980D2 /* pop.framework in Frameworks */,
+				E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */,
+				E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */,
+				E43233A81E8CAD0E00C980D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +276,7 @@
 		0BF22D463B0F479C11EE0488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E43233B61E8CAD9100C980D2 /* pop.framework */,
 				23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */,
 			);
 			name = Frameworks;
@@ -118,6 +312,8 @@
 		E43233251E8C915500C980D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E43233BA1E8CAE9A00C980D2 /* Extension(扩展) */,
+				E43233621E8CABAE00C980D2 /* Common(通讯类) */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -125,26 +321,28 @@
 		E43233261E8C915500C980D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E43233271E8C915500C980D2 /* Main */,
+				E43233271E8C915500C980D2 /* Main(主控制) */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E43233271E8C915500C980D2 /* Main */ = {
+		E43233271E8C915500C980D2 /* Main(主控制) */ = {
 			isa = PBXGroup;
 			children = (
-				E43233281E8C915500C980D2 /* OAuth */,
+				E43233281E8C915500C980D2 /* OAuth(授权) */,
 				E43233291E8C915500C980D2 /* VisitorView */,
 				E432332A1E8C915500C980D2 /* 主控制器 */,
 				E432332B1E8C915500C980D2 /* 测试 */,
 			);
+			name = "Main(主控制)";
 			path = Main;
 			sourceTree = "<group>";
 		};
-		E43233281E8C915500C980D2 /* OAuth */ = {
+		E43233281E8C915500C980D2 /* OAuth(授权) */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = "OAuth(授权)";
 			path = OAuth;
 			sourceTree = "<group>";
 		};
@@ -176,9 +374,129 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E43233621E8CABAE00C980D2 /* Common(通讯类) */ = {
+			isa = PBXGroup;
+			children = (
+				E43233631E8CABAE00C980D2 /* babyblooth-for-swift */,
+			);
+			name = "Common(通讯类)";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E43233631E8CABAE00C980D2 /* babyblooth-for-swift */ = {
+			isa = PBXGroup;
+			children = (
+				E43233641E8CABAE00C980D2 /* BabyBluetooth.h */,
+				E43233651E8CABAE00C980D2 /* BabyBluetooth.m */,
+				E43233661E8CABAE00C980D2 /* BabyCallback.h */,
+				E43233671E8CABAE00C980D2 /* BabyCallback.m */,
+				E43233681E8CABAE00C980D2 /* BabyCentralManager.h */,
+				E43233691E8CABAE00C980D2 /* BabyCentralManager.m */,
+				E432336A1E8CABAE00C980D2 /* BabyDefine.h */,
+				E432336B1E8CABAE00C980D2 /* BabyDefine.m */,
+				E432336C1E8CABAE00C980D2 /* BabyOptions.h */,
+				E432336D1E8CABAE00C980D2 /* BabyOptions.m */,
+				E432336E1E8CABAE00C980D2 /* BabyPeripheralManager.h */,
+				E432336F1E8CABAE00C980D2 /* BabyPeripheralManager.m */,
+				E43233701E8CABAE00C980D2 /* BabyRhythm.h */,
+				E43233711E8CABAE00C980D2 /* BabyRhythm.m */,
+				E43233721E8CABAE00C980D2 /* BabySpeaker.h */,
+				E43233731E8CABAE00C980D2 /* BabySpeaker.m */,
+				E43233741E8CABAE00C980D2 /* BabyToy.h */,
+				E43233751E8CABAE00C980D2 /* BabyToy.m */,
+			);
+			path = "babyblooth-for-swift";
+			sourceTree = "<group>";
+		};
+		E43233871E8CACEB00C980D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43233951E8CACEB00C980D2 /* Alamofire.framework */,
+				E43233971E8CACEB00C980D2 /* Alamofire iOS Tests.xctest */,
+				E43233991E8CACEB00C980D2 /* Alamofire.framework */,
+				E432339B1E8CACEB00C980D2 /* Alamofire macOS Tests.xctest */,
+				E432339D1E8CACEB00C980D2 /* Alamofire.framework */,
+				E432339F1E8CACEB00C980D2 /* Alamofire tvOS Tests.xctest */,
+				E43233A11E8CACEB00C980D2 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E432338A1E8CACEB00C980D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43233A51E8CACEB00C980D2 /* SnapKit.framework */,
+				E43233A71E8CACEB00C980D2 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43233BA1E8CAE9A00C980D2 /* Extension(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				E43233BB1E8CAE9A00C980D2 /* AdditionsOC */,
+				E43233D51E8CAE9A00C980D2 /* ExtensionSwift */,
+			);
+			name = "Extension(扩展)";
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E43233BB1E8CAE9A00C980D2 /* AdditionsOC */ = {
+			isa = PBXGroup;
+			children = (
+				E43233BC1E8CAE9A00C980D2 /* CZAdditions.h */,
+				E43233BD1E8CAE9A00C980D2 /* NSArray+Log.h */,
+				E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */,
+				E43233BF1E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.h */,
+				E43233C01E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m */,
+				E43233C11E8CAE9A00C980D2 /* NSObject+CZRuntime.h */,
+				E43233C21E8CAE9A00C980D2 /* NSObject+CZRuntime.m */,
+				E43233C31E8CAE9A00C980D2 /* NSString+CZBase64.h */,
+				E43233C41E8CAE9A00C980D2 /* NSString+CZBase64.m */,
+				E43233C51E8CAE9A00C980D2 /* NSString+CZHash.h */,
+				E43233C61E8CAE9A00C980D2 /* NSString+CZHash.m */,
+				E43233C71E8CAE9A00C980D2 /* NSString+CZPath.h */,
+				E43233C81E8CAE9A00C980D2 /* NSString+CZPath.m */,
+				E43233C91E8CAE9A00C980D2 /* UIButton+CZAddition.h */,
+				E43233CA1E8CAE9A00C980D2 /* UIButton+CZAddition.m */,
+				E43233CB1E8CAE9A00C980D2 /* UIColor+CZAddition.h */,
+				E43233CC1E8CAE9A00C980D2 /* UIColor+CZAddition.m */,
+				E43233CD1E8CAE9A00C980D2 /* UILabel+CZAddition.h */,
+				E43233CE1E8CAE9A00C980D2 /* UILabel+CZAddition.m */,
+				E43233CF1E8CAE9A00C980D2 /* UIScreen+CZAddition.h */,
+				E43233D01E8CAE9A00C980D2 /* UIScreen+CZAddition.m */,
+				E43233D11E8CAE9A00C980D2 /* UIView+CZAddition.h */,
+				E43233D21E8CAE9A00C980D2 /* UIView+CZAddition.m */,
+				E43233D31E8CAE9A00C980D2 /* UIViewController+CZAddition.h */,
+				E43233D41E8CAE9A00C980D2 /* UIViewController+CZAddition.m */,
+			);
+			path = AdditionsOC;
+			sourceTree = "<group>";
+		};
+		E43233D51E8CAE9A00C980D2 /* ExtensionSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E43233D61E8CAE9A00C980D2 /* Bundle+Extensions.swift */,
+				E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */,
+				E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */,
+				E43233D91E8CAE9A00C980D2 /* String+Extensions.swift */,
+				E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */,
+				E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */,
+				E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */,
+				E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */,
+				E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */,
+				E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */,
+				E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */,
+				E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */,
+			);
+			path = ExtensionSwift;
+			sourceTree = "<group>";
+		};
 		E46E7D561E8C836A00BDF6E2 = {
 			isa = PBXGroup;
 			children = (
+				E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */,
+				E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */,
 				E46E7D611E8C836B00BDF6E2 /* EKeeper */,
 				E46E7D761E8C836B00BDF6E2 /* EKeeperTests */,
 				E46E7D811E8C836B00BDF6E2 /* EKeeperUITests */,
@@ -244,10 +562,13 @@
 				E46E7D5D1E8C836B00BDF6E2 /* Resources */,
 				51B82D331F15218A82049C4B /* [CP] Embed Pods Frameworks */,
 				02A3E72534BF8B426B6CA5F0 /* [CP] Copy Pods Resources */,
+				E43233821E8CACA800C980D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */,
+				E43233AF1E8CAD1200C980D2 /* PBXTargetDependency */,
 			);
 			name = EKeeper;
 			productName = EKeeper;
@@ -330,6 +651,16 @@
 			mainGroup = E46E7D561E8C836A00BDF6E2;
 			productRefGroup = E46E7D601E8C836B00BDF6E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E43233871E8CACEB00C980D2 /* Products */;
+					ProjectRef = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = E432338A1E8CACEB00C980D2 /* Products */;
+					ProjectRef = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E46E7D5E1E8C836B00BDF6E2 /* EKeeper */,
@@ -338,6 +669,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E43233951E8CACEB00C980D2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E43233941E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E43233971E8CACEB00C980D2 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = E43233961E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E43233991E8CACEB00C980D2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E43233981E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E432339B1E8CACEB00C980D2 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = E432339A1E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E432339D1E8CACEB00C980D2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E432339C1E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E432339F1E8CACEB00C980D2 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = E432339E1E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E43233A11E8CACEB00C980D2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E43233A01E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E43233A51E8CACEB00C980D2 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = E43233A41E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E43233A71E8CACEB00C980D2 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = E43233A61E8CACEB00C980D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E46E7D5D1E8C836B00BDF6E2 /* Resources */ = {
@@ -419,8 +816,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */,
+				E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */,
+				E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */,
+				E43233791E8CABAE00C980D2 /* BabyDefine.m in Sources */,
+				E43233F01E8CAE9A00C980D2 /* Date+Extensions.swift in Sources */,
+				E432337E1E8CABAE00C980D2 /* BabyToy.m in Sources */,
+				E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */,
+				E43233EB1E8CAE9A00C980D2 /* UIScreen+CZAddition.m in Sources */,
+				E43233E81E8CAE9A00C980D2 /* UIButton+CZAddition.m in Sources */,
+				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
+				E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */,
+				E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */,
 				E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,
+				E43233F11E8CAE9A00C980D2 /* String+Extensions.swift in Sources */,
+				E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */,
+				E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */,
+				E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */,
+				E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */,
+				E43233E71E8CAE9A00C980D2 /* NSString+CZPath.m in Sources */,
+				E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */,
+				E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */,
+				E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */,
+				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
+				E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */,
+				E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */,
+				E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */,
+				E43233F31E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift in Sources */,
+				E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */,
+				E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */,
+				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
+				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
+				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
+				E432337C1E8CABAE00C980D2 /* BabyRhythm.m in Sources */,
+				E432337B1E8CABAE00C980D2 /* BabyPeripheralManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +873,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = E43233AA1E8CAD0E00C980D2 /* PBXContainerItemProxy */;
+		};
+		E43233AF1E8CAD1200C980D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = E43233AE1E8CAD1200C980D2 /* PBXContainerItemProxy */;
+		};
 		E46E7D751E8C836B00BDF6E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E46E7D5E1E8C836B00BDF6E2 /* EKeeper */;
@@ -570,8 +1010,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/WXDevtool\"",
+					"\"${PODS_ROOT}/Headers/Public/WeexSDK\"",
+					"${PODS_ROOT}/**",
+				);
 				INFOPLIST_FILE = EKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;
@@ -585,8 +1034,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/WXDevtool\"",
+					"\"${PODS_ROOT}/Headers/Public/WeexSDK\"",
+					"${PODS_ROOT}/**",
+				);
 				INFOPLIST_FILE = EKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;

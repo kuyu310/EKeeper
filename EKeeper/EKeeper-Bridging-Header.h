@@ -10,6 +10,6 @@
 #define Ehousekeeper_Bridging_Header_h
 
 #import "SVProgressHUD.h"
-
+#import "BabyBluetooth.h"
 
 #endif /* E_housekeeper_Bridging_Header_h */

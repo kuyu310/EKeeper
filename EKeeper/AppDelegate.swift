@@ -42,3 +42,31 @@ extension AppDelegate {
     }
 }
 
+// MARK: - 从服务器加载应用程序信息
+extension AppDelegate {
+    
+    fileprivate func loadAppInfo() {
+        
+        //        // 1. 模拟异步
+        //        DispatchQueue.global().async {
+        //
+        //            // 1> url
+        //            let url = Bundle.main.urlForResource("main.json", withExtension: nil)
+        //
+        //            // 2> data
+        //            let data = NSData(contentsOf: url!)
+        //
+        //            // 3> 写入磁盘
+        //            let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        //            let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+        //
+        //            // 直接保存在沙盒，等待下一次程序启动使用！
+        //            data?.write(toFile: jsonPath, atomically: true)
+        //            
+        //            print("应用程序加载完毕 \(jsonPath)")
+        //        }
+     }
+}
+
+
+
