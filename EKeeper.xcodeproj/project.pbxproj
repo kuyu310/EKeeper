@@ -103,6 +103,7 @@
 		E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */; };
 		E4D1167F1E8DF3E300A0D75E /* HotKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */; };
 		E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */; };
+		E4D116831E8DF95B00A0D75E /* MessageViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -395,6 +396,7 @@
 		E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeyViewController.swift; sourceTree = "<group>"; };
 		E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewcontroller.swift; sourceTree = "<group>"; };
 		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -734,6 +736,7 @@
 		E432344C1E8CF67C00C980D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1253,6 +1256,7 @@
 				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
 				E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */,
 				E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */,
+				E4D116831E8DF95B00A0D75E /* MessageViewcontroller.swift in Sources */,
 				E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */,
 				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
 				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
