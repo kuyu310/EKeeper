@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48FA3B6B52020D7E11FF3FC7 /* Pods_EKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22C5BAA344040EA3E33B104 /* Pods_EKeeper.framework */; };
 		E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233651E8CABAE00C980D2 /* BabyBluetooth.m */; };
 		E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233671E8CABAE00C980D2 /* BabyCallback.m */; };
 		E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233691E8CABAE00C980D2 /* BabyCentralManager.m */; };
@@ -20,8 +21,6 @@
 		E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233951E8CACEB00C980D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; };
 		E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233A51E8CACEB00C980D2 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; };
-		E43233B91E8CADF300C980D2 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E43233B61E8CAD9100C980D2 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */; };
 		E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C01E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m */; };
 		E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233C21E8CAE9A00C980D2 /* NSObject+CZRuntime.m */; };
@@ -38,7 +37,6 @@
 		E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */; };
 		E43233F01E8CAE9A00C980D2 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */; };
 		E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */; };
-		E43233F31E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */; };
 		E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */; };
 		E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */; };
 		E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */; };
@@ -72,6 +70,23 @@
 		E432342D1E8CB4D800C980D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342C1E8CB4D800C980D2 /* AVFoundation.framework */; };
 		E432342F1E8CB4E300C980D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */; };
 		E43234311E8CB4EB00C980D2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */; };
+		E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234331E8CBBF200C980D2 /* AlamofireEx.swift */; };
+		E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */; };
+		E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */; };
+		E432344E1E8CF69000C980D2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432344D1E8CF69000C980D2 /* MessageViewController.swift */; };
+		E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234511E8CF9C600C980D2 /* ESTabBar.swift */; };
+		E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234521E8CF9C600C980D2 /* ESTabBarController.swift */; };
+		E432345A1E8CF9C600C980D2 /* ESTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234531E8CF9C600C980D2 /* ESTabBarItem.swift */; };
+		E432345B1E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234541E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift */; };
+		E432345C1E8CF9C600C980D2 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234551E8CF9C600C980D2 /* ESTabBarItemContainer.swift */; };
+		E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234561E8CF9C600C980D2 /* ESTabBarItemContentView.swift */; };
+		E432345E1E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234571E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift */; };
+		E43234671E8CFC7F00C980D2 /* ExampleAnimateTipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234601E8CFC7F00C980D2 /* ExampleAnimateTipsContentView.swift */; };
+		E43234681E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234611E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift */; };
+		E43234691E8CFC7F00C980D2 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234621E8CFC7F00C980D2 /* ExampleBasicContentView.swift */; };
+		E432346A1E8CFC7F00C980D2 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234631E8CFC7F00C980D2 /* ExampleBouncesContentView.swift */; };
+		E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234641E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift */; };
+		E432346D1E8CFC7F00C980D2 /* ExampleTipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234661E8CFC7F00C980D2 /* ExampleTipsContentView.swift */; };
 		E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */; };
 		E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D641E8C836B00BDF6E2 /* ViewController.swift */; };
 		E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D661E8C836B00BDF6E2 /* Main.storyboard */; };
@@ -79,6 +94,16 @@
 		E46E7D6D1E8C836B00BDF6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D6B1E8C836B00BDF6E2 /* LaunchScreen.storyboard */; };
 		E46E7D781E8C836B00BDF6E2 /* EKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D771E8C836B00BDF6E2 /* EKeeperTests.swift */; };
 		E46E7D831E8C836B00BDF6E2 /* EKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */; };
+		E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */; };
+		E4D116291E8DDD1300A0D75E /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116281E8DDD1300A0D75E /* pop.framework */; };
+		E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */; };
+		E4D116681E8DE51900A0D75E /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116531E8DE49600A0D75E /* pop.framework */; };
+		E4D116691E8DE51900A0D75E /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116531E8DE49600A0D75E /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4D116751E8DF21E00A0D75E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E4D116741E8DF21E00A0D75E /* main.json */; };
+		E4D1167B1E8DF3D100A0D75E /* WorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167A1E8DF3D100A0D75E /* WorksViewController.swift */; };
+		E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */; };
+		E4D1167F1E8DF3E300A0D75E /* HotKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */; };
+		E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +198,62 @@
 			remoteGlobalIDString = E46E7D5E1E8C836B00BDF6E2;
 			remoteInfo = EKeeper;
 		};
+		E4D116501E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC191218162FB53A00E0CC76;
+			remoteInfo = "pop-ios-static";
+		};
+		E4D116521E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B6BE74819FFD3B900762101;
+			remoteInfo = "pop-ios-framework";
+		};
+		E4D116541E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC68857F18C7B60000C6194C;
+			remoteInfo = "pop-osx-framework";
+		};
+		E4D116561E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0755AE4F1BEA15950094AB41;
+			remoteInfo = "pop-tvos-framework";
+		};
+		E4D116581E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ECF01ED318C92B7F009E0AD1;
+			remoteInfo = "pop-tests-ios";
+		};
+		E4D1165A1E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC7E319918C93D6500B38170;
+			remoteInfo = "pop-tests-osx";
+		};
+		E4D1165C1E8DE49600A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0755AE8C1BEA19580094AB41;
+			remoteInfo = "pop-tests-tvos";
+		};
+		E4D1166A1E8DE51900A0D75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B6BE74719FFD3B900762101;
+			remoteInfo = "pop-ios-framework";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,7 +264,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */,
-				E43233B91E8CADF300C980D2 /* pop.framework in Embed Frameworks */,
+				E4D116691E8DE51900A0D75E /* pop.framework in Embed Frameworks */,
 				E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -193,7 +274,7 @@
 
 /* Begin PBXFileReference section */
 		1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.release.xcconfig"; sourceTree = "<group>"; };
-		23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22C5BAA344040EA3E33B104 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43233301E8C93CA00C980D2 /* EKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 		E43233641E8CABAE00C980D2 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
 		E43233651E8CABAE00C980D2 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
@@ -215,7 +296,6 @@
 		E43233751E8CABAE00C980D2 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
 		E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "EKeeper/OtherFramework/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "EKeeper/OtherFramework/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
-		E43233B61E8CAD9100C980D2 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../../Users/limeng/Library/Developer/Xcode/DerivedData/EKeeper-emwdkdvjqnivvkdlygkwspjcpmfm/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
 		E43233BC1E8CAE9A00C980D2 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		E43233BD1E8CAE9A00C980D2 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -245,7 +325,6 @@
 		E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
-		E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
 		E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
@@ -279,6 +358,23 @@
 		E432342C1E8CB4D800C980D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E43234331E8CBBF200C980D2 /* AlamofireEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireEx.swift; sourceTree = "<group>"; };
+		E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperBaseViewController.swift; sourceTree = "<group>"; };
+		E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperMainViewController.swift; sourceTree = "<group>"; };
+		E432344D1E8CF69000C980D2 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		E43234511E8CF9C600C980D2 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
+		E43234521E8CF9C600C980D2 /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
+		E43234531E8CF9C600C980D2 /* ESTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItem.swift; sourceTree = "<group>"; };
+		E43234541E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemBadgeView.swift; sourceTree = "<group>"; };
+		E43234551E8CF9C600C980D2 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
+		E43234561E8CF9C600C980D2 /* ESTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContentView.swift; sourceTree = "<group>"; };
+		E43234571E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
+		E43234601E8CFC7F00C980D2 /* ExampleAnimateTipsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAnimateTipsContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleAnimateTipsContentView.swift; sourceTree = SOURCE_ROOT; };
+		E43234611E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleBackgroundContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleBackgroundContentView.swift; sourceTree = SOURCE_ROOT; };
+		E43234621E8CFC7F00C980D2 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleBasicContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleBasicContentView.swift; sourceTree = SOURCE_ROOT; };
+		E43234631E8CFC7F00C980D2 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleBouncesContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleBouncesContentView.swift; sourceTree = SOURCE_ROOT; };
+		E43234641E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleHighlightableContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleHighlightableContentView.swift; sourceTree = SOURCE_ROOT; };
+		E43234661E8CFC7F00C980D2 /* ExampleTipsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleTipsContentView.swift; path = EKeeper/Classes/Tools/UIComponent/Content/ExampleTipsContentView.swift; sourceTree = SOURCE_ROOT; };
 		E46E7D5F1E8C836B00BDF6E2 /* EKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D621E8C836B00BDF6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46E7D641E8C836B00BDF6E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +388,15 @@
 		E46E7D7E1E8C836B00BDF6E2 /* EKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKeeperUITests.swift; sourceTree = "<group>"; };
 		E46E7D841E8C836B00BDF6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperNavigationController.swift; sourceTree = "<group>"; };
+		E4D116281E8DDD1300A0D75E /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "/授权棒银企管家/银企管家/EKeeper/EKeeper/EKeeper/pop.framework"; sourceTree = "<absolute>"; };
+		E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
+		E4D116461E8DE49500A0D75E /* pop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pop.xcodeproj; path = "EKeeper/OtherFramework/SnapKit-develop/../pop-master/pop.xcodeproj"; sourceTree = "<group>"; };
+		E4D116741E8DF21E00A0D75E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		E4D1167A1E8DF3D100A0D75E /* WorksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksViewController.swift; sourceTree = "<group>"; };
+		E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeyViewController.swift; sourceTree = "<group>"; };
+		E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,13 +426,15 @@
 				E432340D1E8CB43B00C980D2 /* MapKit.framework in Frameworks */,
 				E432340B1E8CB43400C980D2 /* OpenGLES.framework in Frameworks */,
 				E43234091E8CB42200C980D2 /* QuartzCore.framework in Frameworks */,
+				E4D116291E8DDD1300A0D75E /* pop.framework in Frameworks */,
+				E4D116681E8DE51900A0D75E /* pop.framework in Frameworks */,
 				E43234071E8CB41A00C980D2 /* SystemConfiguration.framework in Frameworks */,
 				E43234051E8CB41200C980D2 /* UIKit.framework in Frameworks */,
 				E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */,
 				E43234011E8CB3FD00C980D2 /* SafariServices.framework in Frameworks */,
-				E43233B71E8CAD9100C980D2 /* pop.framework in Frameworks */,
 				E43233AC1E8CAD1200C980D2 /* SnapKit.framework in Frameworks */,
 				E43233A81E8CAD0E00C980D2 /* Alamofire.framework in Frameworks */,
+				48FA3B6B52020D7E11FF3FC7 /* Pods_EKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +483,7 @@
 				E43234041E8CB41200C980D2 /* UIKit.framework */,
 				E43234021E8CB40900C980D2 /* Photos.framework */,
 				E43234001E8CB3FD00C980D2 /* SafariServices.framework */,
-				E43233B61E8CAD9100C980D2 /* pop.framework */,
-				23C3EBA17B36BBB9B80FAB03 /* Pods_EKeeper.framework */,
+				D22C5BAA344040EA3E33B104 /* Pods_EKeeper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -414,6 +520,8 @@
 		E43233251E8C915500C980D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E432344F1E8CF9C600C980D2 /* UIComponent */,
+				E43234321E8CBBD600C980D2 /* Network */,
 				E43233BA1E8CAE9A00C980D2 /* Extension(扩展) */,
 				E43233621E8CABAE00C980D2 /* Common(通讯类) */,
 			);
@@ -423,6 +531,11 @@
 		E43233261E8C915500C980D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4D116791E8DF36000A0D75E /* Works */,
+				E4D116781E8DF35900A0D75E /* Mine */,
+				E4D116771E8DF34F00A0D75E /* HotKey */,
+				E4D116761E8DF34700A0D75E /* Address */,
+				E432344C1E8CF67C00C980D2 /* Home */,
 				E43233271E8C915500C980D2 /* Main(主控制) */,
 			);
 			path = View;
@@ -458,6 +571,10 @@
 		E432332A1E8C915500C980D2 /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				E4D116741E8DF21E00A0D75E /* main.json */,
+				E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */,
+				E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */,
+				E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */,
 			);
 			path = "主控制器";
 			sourceTree = "<group>";
@@ -582,7 +699,6 @@
 				E43233D71E8CAE9A00C980D2 /* Color+Extension.swift */,
 				E43233D81E8CAE9A00C980D2 /* Date+Extensions.swift */,
 				E43233DA1E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift */,
-				E43233DB1E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift */,
 				E43233DC1E8CAE9A00C980D2 /* UIDevice + Extension.swift */,
 				E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */,
 				E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */,
@@ -609,9 +725,63 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		E43234321E8CBBD600C980D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E43234331E8CBBF200C980D2 /* AlamofireEx.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E432344C1E8CF67C00C980D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E432344D1E8CF69000C980D2 /* MessageViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E432344F1E8CF9C600C980D2 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				E43234501E8CF9C600C980D2 /* ESTabBarController-swift */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		E43234501E8CF9C600C980D2 /* ESTabBarController-swift */ = {
+			isa = PBXGroup;
+			children = (
+				E432345F1E8CFB6200C980D2 /* content */,
+				E43234511E8CF9C600C980D2 /* ESTabBar.swift */,
+				E43234521E8CF9C600C980D2 /* ESTabBarController.swift */,
+				E43234531E8CF9C600C980D2 /* ESTabBarItem.swift */,
+				E43234541E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift */,
+				E43234551E8CF9C600C980D2 /* ESTabBarItemContainer.swift */,
+				E43234561E8CF9C600C980D2 /* ESTabBarItemContentView.swift */,
+				E43234571E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift */,
+			);
+			path = "ESTabBarController-swift";
+			sourceTree = "<group>";
+		};
+		E432345F1E8CFB6200C980D2 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				E43234601E8CFC7F00C980D2 /* ExampleAnimateTipsContentView.swift */,
+				E43234611E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift */,
+				E43234621E8CFC7F00C980D2 /* ExampleBasicContentView.swift */,
+				E43234631E8CFC7F00C980D2 /* ExampleBouncesContentView.swift */,
+				E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */,
+				E43234641E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift */,
+				E43234661E8CFC7F00C980D2 /* ExampleTipsContentView.swift */,
+			);
+			name = content;
+			sourceTree = "<group>";
+		};
 		E46E7D561E8C836A00BDF6E2 = {
 			isa = PBXGroup;
 			children = (
+				E4D116461E8DE49500A0D75E /* pop.xcodeproj */,
 				E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */,
 				E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */,
 				E46E7D611E8C836B00BDF6E2 /* EKeeper */,
@@ -666,6 +836,52 @@
 			path = EKeeperUITests;
 			sourceTree = "<group>";
 		};
+		E4D116471E8DE49500A0D75E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D116511E8DE49600A0D75E /* libpop.a */,
+				E4D116531E8DE49600A0D75E /* pop.framework */,
+				E4D116551E8DE49600A0D75E /* pop.framework */,
+				E4D116571E8DE49600A0D75E /* pop.framework */,
+				E4D116591E8DE49600A0D75E /* pop-tests.xctest */,
+				E4D1165B1E8DE49600A0D75E /* pop-tests.xctest */,
+				E4D1165D1E8DE49600A0D75E /* pop-tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D116761E8DF34700A0D75E /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		E4D116771E8DF34F00A0D75E /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		E4D116781E8DF35900A0D75E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E4D116791E8DF36000A0D75E /* Works */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1167A1E8DF3D100A0D75E /* WorksViewController.swift */,
+			);
+			path = Works;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -686,6 +902,7 @@
 			dependencies = (
 				E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */,
 				E43233AF1E8CAD1200C980D2 /* PBXTargetDependency */,
+				E4D1166B1E8DE51900A0D75E /* PBXTargetDependency */,
 			);
 			name = EKeeper;
 			productName = EKeeper;
@@ -774,6 +991,10 @@
 					ProjectRef = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
 				},
 				{
+					ProductGroup = E4D116471E8DE49500A0D75E /* Products */;
+					ProjectRef = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+				},
+				{
 					ProductGroup = E432338A1E8CACEB00C980D2 /* Products */;
 					ProjectRef = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
 				},
@@ -851,6 +1072,55 @@
 			remoteRef = E43233A61E8CACEB00C980D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E4D116511E8DE49600A0D75E /* libpop.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpop.a;
+			remoteRef = E4D116501E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D116531E8DE49600A0D75E /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E4D116521E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D116551E8DE49600A0D75E /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E4D116541E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D116571E8DE49600A0D75E /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E4D116561E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D116591E8DE49600A0D75E /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E4D116581E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D1165B1E8DE49600A0D75E /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E4D1165A1E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E4D1165D1E8DE49600A0D75E /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E4D1165C1E8DE49600A0D75E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -860,6 +1130,7 @@
 			files = (
 				E46E7D6D1E8C836B00BDF6E2 /* LaunchScreen.storyboard in Resources */,
 				E46E7D6A1E8C836B00BDF6E2 /* Assets.xcassets in Resources */,
+				E4D116751E8DF21E00A0D75E /* main.json in Resources */,
 				E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -933,21 +1204,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */,
+				E432344E1E8CF69000C980D2 /* MessageViewController.swift in Sources */,
+				E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */,
+				E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */,
 				E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */,
+				E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */,
 				E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */,
+				E43234681E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift in Sources */,
 				E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */,
+				E432346D1E8CFC7F00C980D2 /* ExampleTipsContentView.swift in Sources */,
+				E432345E1E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift in Sources */,
+				E43234671E8CFC7F00C980D2 /* ExampleAnimateTipsContentView.swift in Sources */,
 				E43233791E8CABAE00C980D2 /* BabyDefine.m in Sources */,
+				E432346A1E8CFC7F00C980D2 /* ExampleBouncesContentView.swift in Sources */,
 				E43233F01E8CAE9A00C980D2 /* Date+Extensions.swift in Sources */,
 				E432337E1E8CABAE00C980D2 /* BabyToy.m in Sources */,
 				E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */,
 				E43233EB1E8CAE9A00C980D2 /* UIScreen+CZAddition.m in Sources */,
 				E43233E81E8CAE9A00C980D2 /* UIButton+CZAddition.m in Sources */,
 				E43233FC1E8CB0DF00C980D2 /* RCinterfacePackage.swift in Sources */,
+				E43234691E8CFC7F00C980D2 /* ExampleBasicContentView.swift in Sources */,
 				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
+				E432345C1E8CF9C600C980D2 /* ESTabBarItemContainer.swift in Sources */,
+				E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */,
+				E432345B1E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift in Sources */,
+				E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */,
 				E43233FF1E8CB23A00C980D2 /* common.swift in Sources */,
 				E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */,
 				E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */,
+				E4D1167F1E8DF3E300A0D75E /* HotKeyViewController.swift in Sources */,
 				E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */,
+				E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,
 				E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */,
 				E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */,
@@ -958,13 +1246,18 @@
 				E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */,
 				E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */,
 				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
+				E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */,
 				E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */,
 				E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */,
 				E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */,
-				E43233F31E8CAE9A00C980D2 /* UIBarButtonItem+Extensions.swift in Sources */,
+				E432345A1E8CF9C600C980D2 /* ESTabBarItem.swift in Sources */,
+				E4D1167B1E8DF3D100A0D75E /* WorksViewController.swift in Sources */,
 				E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */,
 				E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */,
 				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
+				E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */,
+				E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */,
+				E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */,
 				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
 				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
 				E432337C1E8CABAE00C980D2 /* BabyRhythm.m in Sources */,
@@ -1010,6 +1303,11 @@
 			isa = PBXTargetDependency;
 			target = E46E7D5E1E8C836B00BDF6E2 /* EKeeper */;
 			targetProxy = E46E7D7F1E8C836B00BDF6E2 /* PBXContainerItemProxy */;
+		};
+		E4D1166B1E8DE51900A0D75E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pop-ios-framework";
+			targetProxy = E4D1166A1E8DE51900A0D75E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1130,7 +1428,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EKeeper/OtherFramework/popFramework",
+					"$(PROJECT_DIR)/EKeeper/Framework",
+					"$(PROJECT_DIR)/EKeeper",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1140,6 +1445,7 @@
 					"${PODS_ROOT}/**",
 				);
 				INFOPLIST_FILE = EKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1154,7 +1460,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EKeeper/OtherFramework/popFramework",
+					"$(PROJECT_DIR)/EKeeper/Framework",
+					"$(PROJECT_DIR)/EKeeper",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1164,6 +1477,7 @@
 					"${PODS_ROOT}/**",
 				);
 				INFOPLIST_FILE = EKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyard.EKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -29,9 +29,64 @@ extension RCclientInterfaceFunction: RCIMReceiveMessageDelegate,RCIMUserInfoData
      在您设置了用户信息提供者之后，SDK在需要显示用户信息的时候，会调用此方法，向您请求用户信息用于显示。
      */
     public func getUserInfo(withUserId userId: String!, completion: ((RCUserInfo?) -> Void)!) {
-        print("获取用户信息")
+        
+//        let userInfo = RCUserInfo()
+//        Alamofire.request("http://ojjpkscxv.bkt.clouddn.com/tokenJsonLogin_pic").responseJSON{response in
+//        
+//            switch response.result.isSuccess {
+//                
+//            case true:
+//                
+//                if let value = response.result.value {
+//                    let json = JSON(value)
+//                    
+//                    switch userId {
+//                    case "111":
+//                        userInfo.name = "李萌"
+//                        userInfo.portraitUri = json["data"]["user"][0]["userPic"].string
+//                        
+//                    case "222":
+//                        userInfo.name = "黄谦"
+//                        userInfo.portraitUri = json["data"]["user"][1]["userPic"].string
+//                    case "333":
+//                        userInfo.name = "沈树人"
+//                        userInfo.portraitUri = json["data"]["user"][2]["userPic"].string
+//                        
+//                    case "444":
+//                        userInfo.name = "金晨康"
+//                        userInfo.portraitUri = json["data"]["user"][3]["userPic"].string
+//                    case "555":
+//                        userInfo.name = "赵天田"
+//                        userInfo.portraitUri = json["data"]["user"][4]["userPic"].string
+//                        
+//                    case "666":
+//                        userInfo.name = "单露"
+//                        userInfo.portraitUri = json["data"]["user"][5]["userPic"].string
+//                        
+//                    case "777":
+//                        userInfo.name = "颜成杰"
+//                        userInfo.portraitUri = json["data"]["user"][6]["userPic"].string
+//                        
+//                        
+//                    default:
+//                        print("无此用户")
+//                    }
+//                    
+//                    return completion(userInfo)
+//                    
+//                    
+//                }
+//                
+//                
+//            case false:
+//                print(response.result.error)
+//            }
+//            
+//            
+//            
+//        }
+        
     }
-    
     /*!
      接收消息的回调方法
      
@@ -44,6 +99,12 @@ extension RCclientInterfaceFunction: RCIMReceiveMessageDelegate,RCIMUserInfoData
      */
     public func onRCIMReceive(_ message: RCMessage!, left: Int32) {
         print("接受消息的监听")
+        if left == 0 {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "RefreshConversationList"), object: nil)
+            
+        }
+        
+        
     }
     
     
