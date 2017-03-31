@@ -73,7 +73,6 @@
 		E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234331E8CBBF200C980D2 /* AlamofireEx.swift */; };
 		E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */; };
 		E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */; };
-		E432344E1E8CF69000C980D2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432344D1E8CF69000C980D2 /* MessageViewController.swift */; };
 		E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234511E8CF9C600C980D2 /* ESTabBar.swift */; };
 		E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234521E8CF9C600C980D2 /* ESTabBarController.swift */; };
 		E432345A1E8CF9C600C980D2 /* ESTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234531E8CF9C600C980D2 /* ESTabBarItem.swift */; };
@@ -361,7 +360,6 @@
 		E43234331E8CBBF200C980D2 /* AlamofireEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireEx.swift; sourceTree = "<group>"; };
 		E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperBaseViewController.swift; sourceTree = "<group>"; };
 		E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperMainViewController.swift; sourceTree = "<group>"; };
-		E432344D1E8CF69000C980D2 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		E43234511E8CF9C600C980D2 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
 		E43234521E8CF9C600C980D2 /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
 		E43234531E8CF9C600C980D2 /* ESTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItem.swift; sourceTree = "<group>"; };
@@ -736,7 +734,6 @@
 		E432344C1E8CF67C00C980D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E432344D1E8CF69000C980D2 /* MessageViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1205,7 +1202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */,
-				E432344E1E8CF69000C980D2 /* MessageViewController.swift in Sources */,
 				E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */,
 				E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */,
 				E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */,
