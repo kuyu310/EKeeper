@@ -11,6 +11,7 @@ import Foundation
 class AddressViewController: KeeperBaseViewController{
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.randomColor()
         

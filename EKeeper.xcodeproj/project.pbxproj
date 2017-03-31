@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48FA3B6B52020D7E11FF3FC7 /* Pods_EKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22C5BAA344040EA3E33B104 /* Pods_EKeeper.framework */; };
+		E402AD821E8E5CCC00E2E25D /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E402AD611E8E5AC300E2E25D /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233651E8CABAE00C980D2 /* BabyBluetooth.m */; };
 		E43233771E8CABAE00C980D2 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233671E8CABAE00C980D2 /* BabyCallback.m */; };
 		E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E43233691E8CABAE00C980D2 /* BabyCentralManager.m */; };
@@ -94,19 +95,74 @@
 		E46E7D781E8C836B00BDF6E2 /* EKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D771E8C836B00BDF6E2 /* EKeeperTests.swift */; };
 		E46E7D831E8C836B00BDF6E2 /* EKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */; };
 		E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */; };
-		E4D116291E8DDD1300A0D75E /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116281E8DDD1300A0D75E /* pop.framework */; };
 		E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */; };
-		E4D116681E8DE51900A0D75E /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116531E8DE49600A0D75E /* pop.framework */; };
-		E4D116691E8DE51900A0D75E /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4D116531E8DE49600A0D75E /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4D116751E8DF21E00A0D75E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E4D116741E8DF21E00A0D75E /* main.json */; };
 		E4D1167B1E8DF3D100A0D75E /* WorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167A1E8DF3D100A0D75E /* WorksViewController.swift */; };
 		E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */; };
 		E4D1167F1E8DF3E300A0D75E /* HotKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */; };
 		E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */; };
-		E4D116831E8DF95B00A0D75E /* MessageViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */; };
+		E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116821E8DF95B00A0D75E /* MessageViewController.swift */; };
+		E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */; };
+		E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D116891E8DFBA400A0D75E /* NHKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E402AD5E1E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC191218162FB53A00E0CC76;
+			remoteInfo = "pop-ios-static";
+		};
+		E402AD601E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B6BE74819FFD3B900762101;
+			remoteInfo = "pop-ios-framework";
+		};
+		E402AD621E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC68857F18C7B60000C6194C;
+			remoteInfo = "pop-osx-framework";
+		};
+		E402AD641E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0755AE4F1BEA15950094AB41;
+			remoteInfo = "pop-tvos-framework";
+		};
+		E402AD661E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ECF01ED318C92B7F009E0AD1;
+			remoteInfo = "pop-tests-ios";
+		};
+		E402AD681E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC7E319918C93D6500B38170;
+			remoteInfo = "pop-tests-osx";
+		};
+		E402AD6A1E8E5AC300E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0755AE8C1BEA19580094AB41;
+			remoteInfo = "pop-tests-tvos";
+		};
+		E402AD831E8E5CCC00E2E25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B6BE74719FFD3B900762101;
+			remoteInfo = "pop-ios-framework";
+		};
 		E43233941E8CACEB00C980D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
@@ -198,62 +254,6 @@
 			remoteGlobalIDString = E46E7D5E1E8C836B00BDF6E2;
 			remoteInfo = EKeeper;
 		};
-		E4D116501E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EC191218162FB53A00E0CC76;
-			remoteInfo = "pop-ios-static";
-		};
-		E4D116521E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0B6BE74819FFD3B900762101;
-			remoteInfo = "pop-ios-framework";
-		};
-		E4D116541E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EC68857F18C7B60000C6194C;
-			remoteInfo = "pop-osx-framework";
-		};
-		E4D116561E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0755AE4F1BEA15950094AB41;
-			remoteInfo = "pop-tvos-framework";
-		};
-		E4D116581E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ECF01ED318C92B7F009E0AD1;
-			remoteInfo = "pop-tests-ios";
-		};
-		E4D1165A1E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EC7E319918C93D6500B38170;
-			remoteInfo = "pop-tests-osx";
-		};
-		E4D1165C1E8DE49600A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0755AE8C1BEA19580094AB41;
-			remoteInfo = "pop-tests-tvos";
-		};
-		E4D1166A1E8DE51900A0D75E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B6BE74719FFD3B900762101;
-			remoteInfo = "pop-ios-framework";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -264,7 +264,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */,
-				E4D116691E8DE51900A0D75E /* pop.framework in Embed Frameworks */,
+				E402AD821E8E5CCC00E2E25D /* pop.framework in Embed Frameworks */,
 				E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -275,6 +275,7 @@
 /* Begin PBXFileReference section */
 		1A14FDE8D93260D28A397FE0 /* Pods-EKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		D22C5BAA344040EA3E33B104 /* Pods_EKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E402AD541E8E5AC300E2E25D /* pop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pop.xcodeproj; path = "EKeeper/OtherFramework/pop-master/pop.xcodeproj"; sourceTree = "<group>"; };
 		E43233301E8C93CA00C980D2 /* EKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 		E43233641E8CABAE00C980D2 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
 		E43233651E8CABAE00C980D2 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
@@ -388,15 +389,16 @@
 		E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKeeperUITests.swift; sourceTree = "<group>"; };
 		E46E7D841E8C836B00BDF6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperNavigationController.swift; sourceTree = "<group>"; };
-		E4D116281E8DDD1300A0D75E /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "/授权棒银企管家/银企管家/EKeeper/EKeeper/EKeeper/pop.framework"; sourceTree = "<absolute>"; };
 		E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
-		E4D116461E8DE49500A0D75E /* pop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pop.xcodeproj; path = "EKeeper/OtherFramework/SnapKit-develop/../pop-master/pop.xcodeproj"; sourceTree = "<group>"; };
 		E4D116741E8DF21E00A0D75E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		E4D1167A1E8DF3D100A0D75E /* WorksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksViewController.swift; sourceTree = "<group>"; };
 		E4D1167C1E8DF3DA00A0D75E /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E4D1167E1E8DF3E300A0D75E /* HotKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeyViewController.swift; sourceTree = "<group>"; };
 		E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
-		E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewcontroller.swift; sourceTree = "<group>"; };
+		E4D116821E8DF95B00A0D75E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4D116881E8DFBA400A0D75E /* NHKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHKeyboard.h; sourceTree = "<group>"; };
+		E4D116891E8DFBA400A0D75E /* NHKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKeyboard.m; sourceTree = "<group>"; };
 		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -426,8 +428,6 @@
 				E432340D1E8CB43B00C980D2 /* MapKit.framework in Frameworks */,
 				E432340B1E8CB43400C980D2 /* OpenGLES.framework in Frameworks */,
 				E43234091E8CB42200C980D2 /* QuartzCore.framework in Frameworks */,
-				E4D116291E8DDD1300A0D75E /* pop.framework in Frameworks */,
-				E4D116681E8DE51900A0D75E /* pop.framework in Frameworks */,
 				E43234071E8CB41A00C980D2 /* SystemConfiguration.framework in Frameworks */,
 				E43234051E8CB41200C980D2 /* UIKit.framework in Frameworks */,
 				E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */,
@@ -497,6 +497,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E402AD551E8E5AC300E2E25D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E402AD5F1E8E5AC300E2E25D /* libpop.a */,
+				E402AD611E8E5AC300E2E25D /* pop.framework */,
+				E402AD631E8E5AC300E2E25D /* pop.framework */,
+				E402AD651E8E5AC300E2E25D /* pop.framework */,
+				E402AD671E8E5AC300E2E25D /* pop-tests.xctest */,
+				E402AD691E8E5AC300E2E25D /* pop-tests.xctest */,
+				E402AD6B1E8E5AC300E2E25D /* pop-tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E43233231E8C915500C980D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +534,7 @@
 		E43233251E8C915500C980D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E4D116871E8DFBA400A0D75E /* KeyBoard */,
 				E432344F1E8CF9C600C980D2 /* UIComponent */,
 				E43234321E8CBBD600C980D2 /* Network */,
 				E43233BA1E8CAE9A00C980D2 /* Extension(扩展) */,
@@ -531,6 +546,7 @@
 		E43233261E8C915500C980D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4D116841E8DFB4A00A0D75E /* Login */,
 				E4D116791E8DF36000A0D75E /* Works */,
 				E4D116781E8DF35900A0D75E /* Mine */,
 				E4D116771E8DF34F00A0D75E /* HotKey */,
@@ -736,7 +752,7 @@
 		E432344C1E8CF67C00C980D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E4D116821E8DF95B00A0D75E /* MessageViewcontroller.swift */,
+				E4D116821E8DF95B00A0D75E /* MessageViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -781,7 +797,7 @@
 		E46E7D561E8C836A00BDF6E2 = {
 			isa = PBXGroup;
 			children = (
-				E4D116461E8DE49500A0D75E /* pop.xcodeproj */,
+				E402AD541E8E5AC300E2E25D /* pop.xcodeproj */,
 				E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */,
 				E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */,
 				E46E7D611E8C836B00BDF6E2 /* EKeeper */,
@@ -836,20 +852,6 @@
 			path = EKeeperUITests;
 			sourceTree = "<group>";
 		};
-		E4D116471E8DE49500A0D75E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E4D116511E8DE49600A0D75E /* libpop.a */,
-				E4D116531E8DE49600A0D75E /* pop.framework */,
-				E4D116551E8DE49600A0D75E /* pop.framework */,
-				E4D116571E8DE49600A0D75E /* pop.framework */,
-				E4D116591E8DE49600A0D75E /* pop-tests.xctest */,
-				E4D1165B1E8DE49600A0D75E /* pop-tests.xctest */,
-				E4D1165D1E8DE49600A0D75E /* pop-tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E4D116761E8DF34700A0D75E /* Address */ = {
 			isa = PBXGroup;
 			children = (
@@ -882,6 +884,23 @@
 			path = Works;
 			sourceTree = "<group>";
 		};
+		E4D116841E8DFB4A00A0D75E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E4D116871E8DFBA400A0D75E /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E4D116881E8DFBA400A0D75E /* NHKeyboard.h */,
+				E4D116891E8DFBA400A0D75E /* NHKeyboard.m */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -902,7 +921,7 @@
 			dependencies = (
 				E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */,
 				E43233AF1E8CAD1200C980D2 /* PBXTargetDependency */,
-				E4D1166B1E8DE51900A0D75E /* PBXTargetDependency */,
+				E402AD841E8E5CCC00E2E25D /* PBXTargetDependency */,
 			);
 			name = EKeeper;
 			productName = EKeeper;
@@ -991,8 +1010,8 @@
 					ProjectRef = E43233861E8CACEB00C980D2 /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = E4D116471E8DE49500A0D75E /* Products */;
-					ProjectRef = E4D116461E8DE49500A0D75E /* pop.xcodeproj */;
+					ProductGroup = E402AD551E8E5AC300E2E25D /* Products */;
+					ProjectRef = E402AD541E8E5AC300E2E25D /* pop.xcodeproj */;
 				},
 				{
 					ProductGroup = E432338A1E8CACEB00C980D2 /* Products */;
@@ -1009,6 +1028,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		E402AD5F1E8E5AC300E2E25D /* libpop.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpop.a;
+			remoteRef = E402AD5E1E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD611E8E5AC300E2E25D /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E402AD601E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD631E8E5AC300E2E25D /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E402AD621E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD651E8E5AC300E2E25D /* pop.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = pop.framework;
+			remoteRef = E402AD641E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD671E8E5AC300E2E25D /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E402AD661E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD691E8E5AC300E2E25D /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E402AD681E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E402AD6B1E8E5AC300E2E25D /* pop-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "pop-tests.xctest";
+			remoteRef = E402AD6A1E8E5AC300E2E25D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		E43233951E8CACEB00C980D2 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1070,55 +1138,6 @@
 			fileType = wrapper.cfbundle;
 			path = "SnapKit Tests.xctest";
 			remoteRef = E43233A61E8CACEB00C980D2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D116511E8DE49600A0D75E /* libpop.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libpop.a;
-			remoteRef = E4D116501E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D116531E8DE49600A0D75E /* pop.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = pop.framework;
-			remoteRef = E4D116521E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D116551E8DE49600A0D75E /* pop.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = pop.framework;
-			remoteRef = E4D116541E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D116571E8DE49600A0D75E /* pop.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = pop.framework;
-			remoteRef = E4D116561E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D116591E8DE49600A0D75E /* pop-tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "pop-tests.xctest";
-			remoteRef = E4D116581E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D1165B1E8DE49600A0D75E /* pop-tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "pop-tests.xctest";
-			remoteRef = E4D1165A1E8DE49600A0D75E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E4D1165D1E8DE49600A0D75E /* pop-tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "pop-tests.xctest";
-			remoteRef = E4D1165C1E8DE49600A0D75E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1227,6 +1246,7 @@
 				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
 				E432345C1E8CF9C600C980D2 /* ESTabBarItemContainer.swift in Sources */,
 				E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */,
+				E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */,
 				E432345B1E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift in Sources */,
 				E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */,
 				E43233FF1E8CB23A00C980D2 /* common.swift in Sources */,
@@ -1253,10 +1273,11 @@
 				E4D1167B1E8DF3D100A0D75E /* WorksViewController.swift in Sources */,
 				E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */,
 				E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */,
+				E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */,
 				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
 				E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */,
 				E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */,
-				E4D116831E8DF95B00A0D75E /* MessageViewcontroller.swift in Sources */,
+				E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */,
 				E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */,
 				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
 				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
@@ -1284,6 +1305,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E402AD841E8E5CCC00E2E25D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pop-ios-framework";
+			targetProxy = E402AD831E8E5CCC00E2E25D /* PBXContainerItemProxy */;
+		};
 		E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
@@ -1303,11 +1329,6 @@
 			isa = PBXTargetDependency;
 			target = E46E7D5E1E8C836B00BDF6E2 /* EKeeper */;
 			targetProxy = E46E7D7F1E8C836B00BDF6E2 /* PBXContainerItemProxy */;
-		};
-		E4D1166B1E8DE51900A0D75E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "pop-ios-framework";
-			targetProxy = E4D1166A1E8DE51900A0D75E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

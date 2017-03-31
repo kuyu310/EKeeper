@@ -10,6 +10,9 @@ import SVProgressHUD
 /// 主控制器
 class KeeperMainViewController: ESTabBarController {
 
+    
+    var hotKeyInfo: [[String : String]]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,11 +42,13 @@ extension KeeperMainViewController{
         }
         
         self.didHijackHandler = {
+           [weak tabBarController] tabbarController, viewController, index in
+           guard let hotKeyInfo_temp = self.hotKeyInfo
+           else{
+                return
+            }
             
-            [weak tabBarController] tabbarController, viewController, index in
-            
-            print("执行闭包")
-            
+          
         }
         
     }
@@ -60,57 +65,85 @@ extension KeeperMainViewController {
     fileprivate func setupChildControllers() {
         
 
-        let v1 = MessageViewController()
-        let v2 = MessageViewController()
-        let v3 = MessageViewController()
-        let v4 = MessageViewController()
-        let v5 = MessageViewController()
+         // 0. 获取沙盒 json 路径
+        let docDir = ActionedPath
+        let jsonPath  = docDir.appendingPathComponent("main.json")
         
-        v1.navItem.leftBarButtonItem  = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(register))
+        var data = NSData(contentsOfFile: jsonPath)
         
-        v1.navItem.rightBarButtonItem  = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(login))
+        // 判断 data 是否有内容，如果没有，说明本地沙盒没有文件
+        if data == nil {
+            // 从 Bundle 加载 data
+            let path = Bundle.main.path(forResource: "main", ofType: "json")
+            
+            data = NSData(contentsOfFile: path!)
+        }
 
-
-        v2.navItem.leftBarButtonItem =  UIBarButtonItem(title: "注册2", style: .plain, target: self, action: #selector(register))
+        // 反序列化转换成数组, 这个数组里面的内容是字典类型，看清楚这里，是两个中括号！limeng
         
-        v2.navItem.rightBarButtonItem  = UIBarButtonItem(title: "登录2", style: .plain, target: self, action: #selector(login))
+        guard let array = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: AnyObject]]
+            else {
+                return
+           }
+       
         
-        v4.navItem.leftBarButtonItem =  UIBarButtonItem(title: "注册4", style: .plain, target: self, action: #selector(register))
-        
-        v4.navItem.rightBarButtonItem  = UIBarButtonItem(title: "登录4", style: .plain, target: self, action: #selector(login))
-        
-        v5.navItem.leftBarButtonItem =  UIBarButtonItem(title: "注册5", style: .plain, target: self, action: #selector(register))
-        
-        v5.navItem.rightBarButtonItem  = UIBarButtonItem(title: "登录5", style: .plain, target: self, action: #selector(login))
-        
-
-        
-        
-        
-        let nv1 = KeeperNavigationController.init(rootViewController:v1)
-        let nv2 = KeeperNavigationController.init(rootViewController:v2)
-        
-        let nv4 = KeeperNavigationController.init(rootViewController:v4)
-        
-        let nv5 = KeeperNavigationController.init(rootViewController:v5)
-
-        
-        
-
-  
-        nv1.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: "消息", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
-        nv2.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: "通讯录", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
-        v3.tabBarItem = ESTabBarItem.init(ExampleIrregularityContentView(), title: nil, image: UIImage(named: "photo_verybig"), selectedImage: UIImage(named: "photo_verybig"))
-        nv4.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: "应用", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
-        nv5.tabBarItem = ESTabBarItem.init(ExampleTipsContentView(), title: "我的", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
-        
+        // 遍历数组，循环创建控制器数组
+//        定义一个controller数组
+        var arrayOfControllers = [UIViewController]()
+        for dict in array! {
+            
+            arrayOfControllers.append(makeController(dict: dict))
+        }
         
 
         
         // 设置 tabBar 的子控制器
-        viewControllers = [nv1,nv2,v3,nv4,nv5]
+        viewControllers = arrayOfControllers
         
     }
+    
+    fileprivate func makeController(dict: [String: AnyObject]) -> UIViewController{
+        
+        // 1. 取得字典内容
+        guard let clsName = dict["clsName"] as? String,
+            let title = dict["title"] as? String,
+            let imageName = dict["imageName"] as? String,
+            let imageNameSelected = dict["imageNameSelected"] as? String,
+            
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? KeeperBaseViewController.Type,
+            //保存访客视图的相关信息
+            let visitorDict = dict["visitorInfo"] as? [String: String]
+            else {
+                return UIViewController()
+            }
+        // 2. 创建视图控制器
+        let vc = cls.init()
+        
+        vc.title = title
+        
+        // 设置控制器的访客信息字典
+        vc.visitorInfoDictionary = visitorDict
+        
+        // 3. 设置图像
+        let nav = KeeperNavigationController.init(rootViewController:vc)
+        //对中央按钮的判断
+        if clsName == "HotKeyViewController" {
+        //获取热键信息
+            
+        hotKeyInfo = dict["hotKeyInfo"] as? [[String: String]]
+ 
+        //更新tabbar
+        nav.tabBarItem = ESTabBarItem.init(ExampleIrregularityContentView(), title: nil, image: UIImage(named: imageName), selectedImage: UIImage(named: imageNameSelected as! String))
+        }
+        else{
+            
+             nav.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: imageNameSelected as! String))
+            
+        }
+        return nav
+        
+    }
+    
     
     func  login(){
         

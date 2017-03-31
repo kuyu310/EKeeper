@@ -17,6 +17,6 @@ class MessageViewController: KeeperBaseViewController{
         let bt = UIButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
         bt.titleLabel?.text = "点我"
         bt.backgroundColor = UIColor.yellow
-        //“”
+       
     }
 }

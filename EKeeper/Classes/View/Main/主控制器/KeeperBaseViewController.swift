@@ -27,15 +27,7 @@ class KeeperBaseViewController: UIViewController {
 
         setupUI()
         
-//        1、登录状态判断，是否加载数据
-//        WBNetworkManager.shared.userLogon ? loadData() : ()
-        
-//          2、注册登录成功的小实习
-            NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(loginSuccess),
-            name: NSNotification.Name(rawValue: EKeeperUserLoginSuccessedNotification),
-            object: nil)
+
     }
     
     deinit {
@@ -78,14 +70,7 @@ extension KeeperBaseViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
-    fileprivate func login() {
-        // 发送通知
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: EKeeperUserLoginSuccessedNotification), object: nil)
-    }
-    
-//    @objc private func register() {
-//        print("用户注册")
-//    }
+
 }
 
 // MARK: - 设置界面
