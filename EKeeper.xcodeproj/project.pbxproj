@@ -107,6 +107,7 @@
 		E4ACE5411E8E685400C40AEA /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5381E8E685400C40AEA /* UIView+Layout.m */; };
 		E4ACE5421E8E685400C40AEA /* UIView+SnailUse.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE53A1E8E685400C40AEA /* UIView+SnailUse.m */; };
 		E4ACE54F1E8E921800C40AEA /* SnailQuickMaskPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE54E1E8E921800C40AEA /* SnailQuickMaskPopups.m */; };
+		E4ACE5621E8F4E3900C40AEA /* ProgressHUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5611E8F4E3900C40AEA /* ProgressHUDManager.swift */; };
 		E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */; };
 		E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */; };
 		E4D116751E8DF21E00A0D75E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E4D116741E8DF21E00A0D75E /* main.json */; };
@@ -373,7 +374,7 @@
 		E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E43234331E8CBBF200C980D2 /* AlamofireEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireEx.swift; sourceTree = "<group>"; };
-		E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperBaseViewController.swift; sourceTree = "<group>"; };
+		E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeeperBaseViewController.swift; path = "View/Main/主控制器/KeeperBaseViewController.swift"; sourceTree = "<group>"; };
 		E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperMainViewController.swift; sourceTree = "<group>"; };
 		E43234511E8CF9C600C980D2 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
 		E43234521E8CF9C600C980D2 /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
@@ -427,6 +428,7 @@
 		E4ACE53A1E8E685400C40AEA /* UIView+SnailUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SnailUse.m"; sourceTree = "<group>"; };
 		E4ACE54D1E8E921800C40AEA /* SnailQuickMaskPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailQuickMaskPopups.h; sourceTree = "<group>"; };
 		E4ACE54E1E8E921800C40AEA /* SnailQuickMaskPopups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailQuickMaskPopups.m; sourceTree = "<group>"; };
+		E4ACE5611E8F4E3900C40AEA /* ProgressHUDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUDManager.swift; path = UIComponent/ProgressHUDManager.swift; sourceTree = "<group>"; };
 		E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperNavigationController.swift; sourceTree = "<group>"; };
 		E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
 		E4D116741E8DF21E00A0D75E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 		E43233231E8C915500C980D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E444DC461E8F531700A5BDA6 /* General( 通用) */,
 				E43233FD1E8CB22F00C980D2 /* Public */,
 				E43233FA1E8CAFFC00C980D2 /* ThirdPartyEncapsulation(第三方封装) */,
 				E43233241E8C915500C980D2 /* Model */,
@@ -573,6 +576,7 @@
 		E43233251E8C915500C980D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E4ACE5611E8F4E3900C40AEA /* ProgressHUDManager.swift */,
 				E4D116871E8DFBA400A0D75E /* KeyBoard */,
 				E432344F1E8CF9C600C980D2 /* UIComponent */,
 				E43234321E8CBBD600C980D2 /* Network */,
@@ -629,7 +633,6 @@
 				E4D116741E8DF21E00A0D75E /* main.json */,
 				E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */,
 				E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */,
-				E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */,
 			);
 			path = "主控制器";
 			sourceTree = "<group>";
@@ -832,6 +835,14 @@
 				E43234661E8CFC7F00C980D2 /* ExampleTipsContentView.swift */,
 			);
 			name = content;
+			sourceTree = "<group>";
+		};
+		E444DC461E8F531700A5BDA6 /* General( 通用) */ = {
+			isa = PBXGroup;
+			children = (
+				E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */,
+			);
+			name = "General( 通用)";
 			sourceTree = "<group>";
 		};
 		E46E7D561E8C836A00BDF6E2 = {
@@ -1350,6 +1361,7 @@
 				E4ACE5181E8E65CB00C40AEA /* SnailFullScreenView.m in Sources */,
 				E4ACE53C1E8E685400C40AEA /* NSDate+Extend.m in Sources */,
 				E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */,
+				E4ACE5621E8F4E3900C40AEA /* ProgressHUDManager.swift in Sources */,
 				E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */,
 				E4ACE53D1E8E685400C40AEA /* UIAlertController+SnailUse.m in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,

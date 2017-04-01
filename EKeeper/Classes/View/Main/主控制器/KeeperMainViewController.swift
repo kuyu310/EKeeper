@@ -15,7 +15,7 @@ class KeeperMainViewController: ESTabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //给tabbar加载由navigation包裹的自控制器viewcontrollers
         setupChildControllers()
         //设置tabbar的UI和回调函数
@@ -86,25 +86,19 @@ extension KeeperMainViewController {
         //  定义一个controller数组
         var arrayOfControllers = [UIViewController]()
         for dict in array! {
-            
             arrayOfControllers.append(makeController(dict: dict))
         }
-        
-
-        
         // 设置 tabBar 的子控制器
         viewControllers = arrayOfControllers
         
     }
     
     fileprivate func makeController(dict: [String: AnyObject]) -> UIViewController{
-        
         // 1. 取得字典内容
         guard let clsName = dict["clsName"] as? String,
             let title = dict["title"] as? String,
             let imageName = dict["imageName"] as? String,
             let imageNameSelected = dict["imageNameSelected"] as? String,
-            
             let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? KeeperBaseViewController.Type,
             //保存访客视图的相关信息
             let visitorDict = dict["visitorInfo"] as? [String: String]
@@ -124,15 +118,13 @@ extension KeeperMainViewController {
         //对中央按钮的判断
         if clsName == "HotKeyViewController" {
         //获取热键信息
-            
         hotKeyInfo = dict["hotKeyInfo"] as? [[String: String]]
- 
         //更新tabbar
         nav.tabBarItem = ESTabBarItem.init(ExampleIrregularityContentView(), title: nil, image: UIImage(named: imageName), selectedImage: UIImage(named: imageNameSelected as! String))
         }
         else{
             
-             nav.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: imageNameSelected as! String))
+            nav.tabBarItem = ESTabBarItem.init(ExampleIrregularityBasicContentView(), title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: imageNameSelected as! String))
             
         }
         return nav
@@ -144,6 +136,7 @@ extension KeeperMainViewController {
         
         print("登录")
     }
+    
     func  register(){
         
         print("注册")
@@ -153,9 +146,7 @@ extension KeeperMainViewController {
 
 //实现pop菜单功能,并实现pop对象的所有委托
 extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreenViewDelegate{
-    
-    
-    
+
     fileprivate func showFullPopView(){
   
         let v = fullScreenSet()
@@ -163,9 +154,9 @@ extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreen
  
          popups = SnailQuickMaskPopups(maskStyle: MaskStyle.whiteBlur, aView: v)
          popups.isDismissedOppositeDirection  = true
-         popups.isAllowPopupsDrag = true
+         popups.isAllowPopupsDrag = false
         
-        popups.dampingRatio = 0.5
+         popups.dampingRatio = 0.5
          popups.present(animated: true, completion: nil)
         
      }
@@ -173,8 +164,6 @@ extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreen
     func fullScreenSet() -> SnailFullScreenView{
         
         let view = SnailFullScreenView()
-        
-       
         view.frame.size = (UIApplication.shared.keyWindow?.size)!
         
         var items:[SnailImageLabelItem] = []

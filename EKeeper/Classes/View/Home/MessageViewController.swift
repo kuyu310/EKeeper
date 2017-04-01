@@ -21,9 +21,6 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
     func popDownMenu(){
         
         
-       
-        
-        
         let v = UIView.qzoneCurtain() as! SnailCurtainView
         v.delegate = self
         

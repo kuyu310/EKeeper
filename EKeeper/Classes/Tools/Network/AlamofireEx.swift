@@ -23,8 +23,19 @@ enum RequestType: Int {
 //创建一个闭包
 typealias sendVlesClosure = (AnyObject?, NSError?)->Void
 typealias uploadClosure = (AnyObject?, NSError?,Int64?,Int64?,Int64?)->Void
+
 class EKeeperNetworkManager: NSObject {
     
+//    形成单例
+    static let shareInstance: EKeeperNetworkManager = {
+        let tools = EKeeperNetworkManager()
+        return tools
+    }()
+
+}
+
+extension EKeeperNetworkManager {
+
     
     //MARK: 网络请求中的GET,Post,DELETE
     class func request(_ type:RequestType ,URLString:String, Parameter:[String:AnyObject], block:@escaping sendVlesClosure) {
