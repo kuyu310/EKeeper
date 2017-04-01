@@ -8,15 +8,33 @@
 
 import Foundation
 
-class MessageViewController: KeeperBaseViewController{
+class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,SnailQuickMaskPopupsDelegate{
     
+    var popups = SnailQuickMaskPopups()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.randomColor()
         
-        let bt = UIButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
-        bt.titleLabel?.text = "点我"
-        bt.backgroundColor = UIColor.yellow
+        self.navItem.rightBarButtonItem = UIBarButtonItem(title: "菜单", style: .plain, target: self, action: #selector(popDownMenu))
        
     }
+    func popDownMenu(){
+        
+        
+       
+        
+        
+        let v = UIView.qzoneCurtain() as! SnailCurtainView
+        v.delegate = self
+        
+        popups = SnailQuickMaskPopups(maskStyle: MaskStyle.blackTranslucent, aView: v)
+       
+        popups.presentationStyle = PresentationStyle.top
+        
+        popups.delegate = self
+        popups.present(animated: true, completion: nil)
+        
+    }
+    
+        
 }

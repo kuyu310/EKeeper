@@ -10,7 +10,7 @@ import SVProgressHUD
 /// 主控制器
 class KeeperMainViewController: ESTabBarController {
 
-    
+    var popups = SnailQuickMaskPopups()
     var hotKeyInfo: [[String : String]]?
     
     override func viewDidLoad() {
@@ -22,8 +22,6 @@ class KeeperMainViewController: ESTabBarController {
         setTabbarUI()
         
     }
-    
-    
 }
 
 //MARK: 设置tabbar的ui
@@ -43,22 +41,19 @@ extension KeeperMainViewController{
         
         self.didHijackHandler = {
            [weak tabBarController] tabbarController, viewController, index in
-           guard let hotKeyInfo_temp = self.hotKeyInfo
-           else{
-                return
-            }
+//           guard let hotKeyInfo_temp = self.hotKeyInfo
+//           else{
+//                return
+//            }
+            self.showFullPopView()
             
-          
         }
         
     }
     
     
 }
-// extension 类似于 OC 中的 分类，在 Swift 中还可以用来切分代码块
-// 可以把相近功能的函数，放在一个 extension 中
-// 便于代码维护
-// 注意：和 OC 的分类一样，extension 中不能定义属性
+
 // MARK: - 设置界面
 extension KeeperMainViewController {
     /// 设置所有子控制器
@@ -88,7 +83,7 @@ extension KeeperMainViewController {
        
         
         // 遍历数组，循环创建控制器数组
-//        定义一个controller数组
+        //  定义一个controller数组
         var arrayOfControllers = [UIViewController]()
         for dict in array! {
             
@@ -154,4 +149,62 @@ extension KeeperMainViewController {
         print("注册")
     }
 
+}
+
+//实现pop菜单功能,并实现pop对象的所有委托
+extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreenViewDelegate{
+    
+    
+    
+    fileprivate func showFullPopView(){
+  
+        let v = fullScreenSet()
+         v.delegate = self
+ 
+         popups = SnailQuickMaskPopups(maskStyle: MaskStyle.whiteBlur, aView: v)
+         popups.isDismissedOppositeDirection  = true
+         popups.isAllowPopupsDrag = true
+        
+        popups.dampingRatio = 0.5
+         popups.present(animated: true, completion: nil)
+        
+     }
+
+    func fullScreenSet() -> SnailFullScreenView{
+        
+        let view = SnailFullScreenView()
+        
+       
+        view.frame.size = (UIApplication.shared.keyWindow?.size)!
+        
+        var items:[SnailImageLabelItem] = []
+        let array: [String] = ["文字", "照片视频", "头条文章", "红包", "直播", "更多", "点评", "好友圈", "音乐", "商品", "签到", "秒拍"]
+        (array as NSArray).enumerateObjects({ (obj, idx, stop) in
+            let item = SnailImageLabelItem()
+            
+            item.image = UIImage(named: String.init(format: "sina_%@", obj as! NSString))
+            item.title = (obj as! NSString) as String!
+            
+            items.append(item)
+            
+        })
+        
+        view.items = items
+
+        return view
+        
+    }
+    
+    
+    func fullScreenView(whenTapped fullScreenView: SnailFullScreenView) {
+        popups.dismiss(animated: true, completion: nil)
+    }
+    func fullScreenViewDidClickAdvertisement(_ advertisement: UIButton) {
+        print("guanggao")
+    }
+    
+    func fullScreenView(_ fullView: SnailFullScreenView, didClickItemAt index: Int) {
+        print("点击")
+    }
+    
 }

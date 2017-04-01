@@ -94,6 +94,19 @@
 		E46E7D6D1E8C836B00BDF6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E7D6B1E8C836B00BDF6E2 /* LaunchScreen.storyboard */; };
 		E46E7D781E8C836B00BDF6E2 /* EKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D771E8C836B00BDF6E2 /* EKeeperTests.swift */; };
 		E46E7D831E8C836B00BDF6E2 /* EKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */; };
+		E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */; };
+		E4ACE5181E8E65CB00C40AEA /* SnailFullScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5101E8E65CB00C40AEA /* SnailFullScreenView.m */; };
+		E4ACE5191E8E65CB00C40AEA /* SnailImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5121E8E65CB00C40AEA /* SnailImageLabel.m */; };
+		E4ACE51B1E8E65CB00C40AEA /* SnailTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5161E8E65CB00C40AEA /* SnailTooltipView.m */; };
+		E4ACE53B1E8E685400C40AEA /* CALayer+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE52C1E8E685400C40AEA /* CALayer+Layout.m */; };
+		E4ACE53C1E8E685400C40AEA /* NSDate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE52E1E8E685400C40AEA /* NSDate+Extend.m */; };
+		E4ACE53D1E8E685400C40AEA /* UIAlertController+SnailUse.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5301E8E685400C40AEA /* UIAlertController+SnailUse.m */; };
+		E4ACE53E1E8E685400C40AEA /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5321E8E685400C40AEA /* UIColor+Extend.m */; };
+		E4ACE53F1E8E685400C40AEA /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5341E8E685400C40AEA /* UINavigationBar+BackgroundColor.m */; };
+		E4ACE5401E8E685400C40AEA /* UIScreen+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5361E8E685400C40AEA /* UIScreen+Extend.m */; };
+		E4ACE5411E8E685400C40AEA /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5381E8E685400C40AEA /* UIView+Layout.m */; };
+		E4ACE5421E8E685400C40AEA /* UIView+SnailUse.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE53A1E8E685400C40AEA /* UIView+SnailUse.m */; };
+		E4ACE54F1E8E921800C40AEA /* SnailQuickMaskPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE54E1E8E921800C40AEA /* SnailQuickMaskPopups.m */; };
 		E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */; };
 		E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */; };
 		E4D116751E8DF21E00A0D75E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E4D116741E8DF21E00A0D75E /* main.json */; };
@@ -388,6 +401,32 @@
 		E46E7D7E1E8C836B00BDF6E2 /* EKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46E7D821E8C836B00BDF6E2 /* EKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKeeperUITests.swift; sourceTree = "<group>"; };
 		E46E7D841E8C836B00BDF6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4ACE50D1E8E65CB00C40AEA /* SnailCurtainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailCurtainView.h; sourceTree = "<group>"; };
+		E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailCurtainView.m; sourceTree = "<group>"; };
+		E4ACE50F1E8E65CB00C40AEA /* SnailFullScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailFullScreenView.h; sourceTree = "<group>"; };
+		E4ACE5101E8E65CB00C40AEA /* SnailFullScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailFullScreenView.m; sourceTree = "<group>"; };
+		E4ACE5111E8E65CB00C40AEA /* SnailImageLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailImageLabel.h; sourceTree = "<group>"; };
+		E4ACE5121E8E65CB00C40AEA /* SnailImageLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailImageLabel.m; sourceTree = "<group>"; };
+		E4ACE5151E8E65CB00C40AEA /* SnailTooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailTooltipView.h; sourceTree = "<group>"; };
+		E4ACE5161E8E65CB00C40AEA /* SnailTooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailTooltipView.m; sourceTree = "<group>"; };
+		E4ACE52B1E8E685400C40AEA /* CALayer+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Layout.h"; sourceTree = "<group>"; };
+		E4ACE52C1E8E685400C40AEA /* CALayer+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Layout.m"; sourceTree = "<group>"; };
+		E4ACE52D1E8E685400C40AEA /* NSDate+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extend.h"; sourceTree = "<group>"; };
+		E4ACE52E1E8E685400C40AEA /* NSDate+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extend.m"; sourceTree = "<group>"; };
+		E4ACE52F1E8E685400C40AEA /* UIAlertController+SnailUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SnailUse.h"; sourceTree = "<group>"; };
+		E4ACE5301E8E685400C40AEA /* UIAlertController+SnailUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SnailUse.m"; sourceTree = "<group>"; };
+		E4ACE5311E8E685400C40AEA /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		E4ACE5321E8E685400C40AEA /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		E4ACE5331E8E685400C40AEA /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
+		E4ACE5341E8E685400C40AEA /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
+		E4ACE5351E8E685400C40AEA /* UIScreen+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extend.h"; sourceTree = "<group>"; };
+		E4ACE5361E8E685400C40AEA /* UIScreen+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Extend.m"; sourceTree = "<group>"; };
+		E4ACE5371E8E685400C40AEA /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		E4ACE5381E8E685400C40AEA /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		E4ACE5391E8E685400C40AEA /* UIView+SnailUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SnailUse.h"; sourceTree = "<group>"; };
+		E4ACE53A1E8E685400C40AEA /* UIView+SnailUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SnailUse.m"; sourceTree = "<group>"; };
+		E4ACE54D1E8E921800C40AEA /* SnailQuickMaskPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailQuickMaskPopups.h; sourceTree = "<group>"; };
+		E4ACE54E1E8E921800C40AEA /* SnailQuickMaskPopups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailQuickMaskPopups.m; sourceTree = "<group>"; };
 		E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperNavigationController.swift; sourceTree = "<group>"; };
 		E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
 		E4D116741E8DF21E00A0D75E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -760,6 +799,7 @@
 		E432344F1E8CF9C600C980D2 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E4ACE50C1E8E65CB00C40AEA /* PopViewsDemo */,
 				E43234501E8CF9C600C980D2 /* ESTabBarController-swift */,
 			);
 			path = UIComponent;
@@ -850,6 +890,55 @@
 				E46E7D841E8C836B00BDF6E2 /* Info.plist */,
 			);
 			path = EKeeperUITests;
+			sourceTree = "<group>";
+		};
+		E4ACE50C1E8E65CB00C40AEA /* PopViewsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E4ACE54C1E8E921800C40AEA /* SnailQuickMaskPopups */,
+				E4ACE52A1E8E685400C40AEA /* Utilities */,
+				E4ACE50D1E8E65CB00C40AEA /* SnailCurtainView.h */,
+				E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */,
+				E4ACE50F1E8E65CB00C40AEA /* SnailFullScreenView.h */,
+				E4ACE5101E8E65CB00C40AEA /* SnailFullScreenView.m */,
+				E4ACE5111E8E65CB00C40AEA /* SnailImageLabel.h */,
+				E4ACE5121E8E65CB00C40AEA /* SnailImageLabel.m */,
+				E4ACE5151E8E65CB00C40AEA /* SnailTooltipView.h */,
+				E4ACE5161E8E65CB00C40AEA /* SnailTooltipView.m */,
+			);
+			path = PopViewsDemo;
+			sourceTree = "<group>";
+		};
+		E4ACE52A1E8E685400C40AEA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E4ACE52B1E8E685400C40AEA /* CALayer+Layout.h */,
+				E4ACE52C1E8E685400C40AEA /* CALayer+Layout.m */,
+				E4ACE52D1E8E685400C40AEA /* NSDate+Extend.h */,
+				E4ACE52E1E8E685400C40AEA /* NSDate+Extend.m */,
+				E4ACE52F1E8E685400C40AEA /* UIAlertController+SnailUse.h */,
+				E4ACE5301E8E685400C40AEA /* UIAlertController+SnailUse.m */,
+				E4ACE5311E8E685400C40AEA /* UIColor+Extend.h */,
+				E4ACE5321E8E685400C40AEA /* UIColor+Extend.m */,
+				E4ACE5331E8E685400C40AEA /* UINavigationBar+BackgroundColor.h */,
+				E4ACE5341E8E685400C40AEA /* UINavigationBar+BackgroundColor.m */,
+				E4ACE5351E8E685400C40AEA /* UIScreen+Extend.h */,
+				E4ACE5361E8E685400C40AEA /* UIScreen+Extend.m */,
+				E4ACE5371E8E685400C40AEA /* UIView+Layout.h */,
+				E4ACE5381E8E685400C40AEA /* UIView+Layout.m */,
+				E4ACE5391E8E685400C40AEA /* UIView+SnailUse.h */,
+				E4ACE53A1E8E685400C40AEA /* UIView+SnailUse.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E4ACE54C1E8E921800C40AEA /* SnailQuickMaskPopups */ = {
+			isa = PBXGroup;
+			children = (
+				E4ACE54D1E8E921800C40AEA /* SnailQuickMaskPopups.h */,
+				E4ACE54E1E8E921800C40AEA /* SnailQuickMaskPopups.m */,
+			);
+			path = SnailQuickMaskPopups;
 			sourceTree = "<group>";
 		};
 		E4D116761E8DF34700A0D75E /* Address */ = {
@@ -1224,6 +1313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */,
+				E4ACE53E1E8E685400C40AEA /* UIColor+Extend.m in Sources */,
 				E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */,
 				E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */,
 				E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */,
@@ -1245,24 +1335,35 @@
 				E43234691E8CFC7F00C980D2 /* ExampleBasicContentView.swift in Sources */,
 				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
 				E432345C1E8CF9C600C980D2 /* ESTabBarItemContainer.swift in Sources */,
+				E4ACE53F1E8E685400C40AEA /* UINavigationBar+BackgroundColor.m in Sources */,
+				E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */,
 				E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */,
 				E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */,
 				E432345B1E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift in Sources */,
+				E4ACE5421E8E685400C40AEA /* UIView+SnailUse.m in Sources */,
 				E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */,
 				E43233FF1E8CB23A00C980D2 /* common.swift in Sources */,
 				E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */,
 				E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */,
 				E4D1167F1E8DF3E300A0D75E /* HotKeyViewController.swift in Sources */,
+				E4ACE53B1E8E685400C40AEA /* CALayer+Layout.m in Sources */,
+				E4ACE5181E8E65CB00C40AEA /* SnailFullScreenView.m in Sources */,
+				E4ACE53C1E8E685400C40AEA /* NSDate+Extend.m in Sources */,
 				E46E7D651E8C836B00BDF6E2 /* ViewController.swift in Sources */,
 				E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */,
+				E4ACE53D1E8E685400C40AEA /* UIAlertController+SnailUse.m in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,
 				E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */,
 				E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */,
 				E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */,
+				E4ACE54F1E8E921800C40AEA /* SnailQuickMaskPopups.m in Sources */,
+				E4ACE51B1E8E65CB00C40AEA /* SnailTooltipView.m in Sources */,
 				E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */,
 				E43233E71E8CAE9A00C980D2 /* NSString+CZPath.m in Sources */,
+				E4ACE5401E8E685400C40AEA /* UIScreen+Extend.m in Sources */,
 				E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */,
 				E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */,
+				E4ACE5191E8E65CB00C40AEA /* SnailImageLabel.m in Sources */,
 				E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */,
 				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
 				E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */,
@@ -1280,6 +1381,7 @@
 				E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */,
 				E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */,
 				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
+				E4ACE5411E8E685400C40AEA /* UIView+Layout.m in Sources */,
 				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
 				E432337C1E8CABAE00C980D2 /* BabyRhythm.m in Sources */,
 				E432337B1E8CABAE00C980D2 /* BabyPeripheralManager.m in Sources */,

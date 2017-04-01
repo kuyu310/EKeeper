@@ -48,7 +48,7 @@ pod 'SDWebImage', '3.7.5'
 #pod "ESTabBarController-swift"
 #pod 'pop'
 
-
+#pod 'SnailQuickMaskPopups', '~> 0.0.3'
 #融云的sdk
 pod 'RongCloudIM/IMLib', '~> 2.8.3'
 pod 'RongCloudIM/IMKit', '~> 2.8.3'
