@@ -9,7 +9,7 @@
     import UIKit
     import UserNotifications
     import SVProgressHUD
-    
+    import ChameleonFramework
     
     @UIApplicationMain
     class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +21,7 @@
             //1.设置应用额外设置 及 启动预操作(判断版本更新main.json）
             setupAdditions()
             //2.判断沙箱动作，更新UI
+            
             loadAppInfo()
             //3，初始化融云
             
@@ -37,8 +38,10 @@
             //8.异步从服务器加载应用程序信息(main.json)
             window?.makeKeyAndVisible()
          
-//            测试 
-            
+//            全局扁平化颜色管理 --这里先屏蔽掉了，不是太好用，需要美工配合一点点搞才行
+//            Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum,
+//                                                      withSecondaryColor: .flatBlue,
+//                                                      andContentStyle: .contrast)
             return true
         
         }

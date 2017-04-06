@@ -18,4 +18,8 @@
 #import "SnailFullScreenView.h"
 #import "NHKeyboard.h"
 #import "UIView+SnailUse.h"
+
+#import "FSCalendar.h"
+
+
 #endif /* E_housekeeper_Bridging_Header_h */

@@ -10,8 +10,7 @@ class KeeperBaseViewController: UIViewController {
     /// 访客视图信息字典
     var visitorInfoDictionary: [String: String]?
     
-    /// 表格视图 - 如果用户没有登录，就不创建
-    var tableView: UITableView?
+   
     /// 刷新控件
    
     /// 上拉刷新标记
@@ -84,24 +83,10 @@ extension KeeperBaseViewController {
         
 //        WBNetworkManager.shared.userLogon ? setupTableView() : setupVisitorView()
         
-        setupTableView()
         
     }
     
-    /// 设置表格视图 - 用户登录之后执行
-    /// 子类重写此方法，因为子类不需要关心用户登录之前的逻辑
-    func setupTableView() {
-        
-        tableView = UITableView(frame: view.bounds, style: .plain)
-        
-        view.insertSubview(tableView!, belowSubview: navigationBar)
-        
-        // 设置数据源&代理 -> 目的：子类直接实现数据源方法
        
-        
-        
-    }
-    
     /// 设置访客视图
     private func setupVisitorView() {
        
@@ -118,7 +103,7 @@ extension KeeperBaseViewController {
         navigationBar.items = [navItem]
         
         // 1> 设置 navBar 整个背景的渲染颜色
-        navigationBar.barTintColor = UIColor.randomColor()
+        navigationBar.barTintColor = UIColor.flatSkyBlueDark
         // 2> 设置 navBar 的字体颜色
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
             // 3> 设置系统按钮的文字渲染颜色

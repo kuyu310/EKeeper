@@ -15,9 +15,14 @@ class AddressViewController: KeeperBaseViewController{
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.randomColor()
         
-        let bt = UIButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
-        bt.titleLabel?.text = "点我"
-        bt.backgroundColor = UIColor.yellow
+       
+        
+        
+        let v2 = MessageTopCell.newInstance()!  as MessageTopCell
+        let headerFrame: CGRect = CGRect(x: 0 , y: NavigationH + FSCalendarStandardWeeklyPageHeight, width: ScreenWidth, height: 160)
+        v2.frame = headerFrame
+        view.addSubview(v2)
+
         
     }
 }

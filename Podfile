@@ -57,6 +57,9 @@ pod 'RongCloudIM/IMKit', '~> 2.8.3'
 #pod 'PopMenu'
 #网络监听
 pod 'ReachabilitySwift', '~> 3'
-
-
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'TTSegmentedControl'
+ pod 'SJFluidSegmentedControl', '~> 1.0'
+ pod 'PullToRefresher', '~> 2.0'
+ 
 end
