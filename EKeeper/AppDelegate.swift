@@ -12,9 +12,15 @@
     import ChameleonFramework
     
     @UIApplicationMain
-    class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+
+    class AppDelegate: UIResponder, UIApplicationDelegate{
         
         var window: UIWindow?
+        
+        
+       
+        
         
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
            
@@ -24,6 +30,8 @@
             
             loadAppInfo()
             //3，初始化融云
+           
+            
             
             //4.初始化week框架
             
@@ -47,6 +55,8 @@
         }
         
     }
+    
+    
     // MARK: - 设置应用程序额外信息
     extension AppDelegate {
         

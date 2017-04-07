@@ -28,8 +28,8 @@ class EKeeperNetworkManager: NSObject {
     
 //    形成单例
     static let shareInstance: EKeeperNetworkManager = {
-        let tools = EKeeperNetworkManager()
-        return tools
+        let netTools = EKeeperNetworkManager()
+        return netTools
     }()
 
 }
@@ -38,7 +38,7 @@ extension EKeeperNetworkManager {
 
     
     //MARK: 网络请求中的GET,Post,DELETE
-    class func request(_ type:RequestType ,URLString:String, Parameter:[String:AnyObject], block:@escaping sendVlesClosure) {
+     func request(_ type:RequestType ,URLString:String, Parameter:[String:AnyObject], block:@escaping sendVlesClosure) {
         
         switch type {
         case .requestTypeGet:
@@ -75,7 +75,7 @@ extension EKeeperNetworkManager {
     
     
     
-    class func upLoadImageRequest(urlString : String, params:[String:String], data: [Data], name: [String],success : @escaping (_ response : [String : AnyObject])->(), failture : @escaping (_ error : Error)->()){
+     func upLoadImageRequest(urlString : String, params:[String:String], data: [Data], name: [String],success : @escaping (_ response : [String : AnyObject])->(), failture : @escaping (_ error : Error)->()){
         
         let headers = ["content-type":"multipart/form-data"]
         
@@ -114,7 +114,7 @@ extension EKeeperNetworkManager {
     
     //MARK:    文件上传
     
-    class func uploadFile(_ urlString:String,fileURL:URL,block:@escaping uploadClosure) {
+     func uploadFile(_ urlString:String,fileURL:URL,block:@escaping uploadClosure) {
         //检测网络是否存在的方法
         
         //        Alamofire.upload(fileURL: fileURL, to: urlString)
@@ -140,50 +140,50 @@ extension EKeeperNetworkManager {
 let reachability = Reachability()!
 
 //MARK: 检测网络状态
-extension EKeeperNetworkManager{
-    
-    
-    class func NetworkStatusListener() {
-        // 1、设置网络状态消息监听 2、获得网络Reachability对象
-        NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityChanged),name: ReachabilityChangedNotification,object: reachability)
-        do{
-            // 3、开启网络状态消息监听
-            try reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }
-    }
-    
-    class func closeNetWorkListener(){
-        // 关闭网络状态消息监听
-        reachability.stopNotifier()
-        // 移除网络状态消息通知
-        NotificationCenter.default.removeObserver(self, name: ReachabilityChangedNotification, object: reachability)
-        
-        
-    }
-    
-    // 主动检测网络状态，这个是个通知代理函数，不用去调用，会在收到通知后自动调用
-    func reachabilityChanged(note: NSNotification) {
-        
-        let reachability = note.object as! Reachability // 准备获取网络连接信息
-        
-        if reachability.isReachable { // 判断网络连接状态
-            print("网络连接：可用")
-            if reachability.isReachableViaWiFi { // 判断网络连接类型
-                print("连接类型：WiFi")
-            } else {
-                print("连接类型：移动网络")
-                // getHostAddrss_GPRS()  // 通过外网获取主机IP地址，并且初始化Socket并建立连接
-            }
-        } else {
-            print("网络连接：不可用")
-                }
-    }
-    
- 
-}
-
+//extension EKeeperNetworkManager{
+//    
+//    
+//     func NetworkStatusListener() {
+//        // 1、设置网络状态消息监听 2、获得网络Reachability对象
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityChanged),name: ReachabilityChangedNotification,object: reachability)
+//        do{
+//            // 3、开启网络状态消息监听
+//            try reachability.startNotifier()
+//        }catch{
+//            print("could not start reachability notifier")
+//        }
+//    }
+//    
+//     func closeNetWorkListener(){
+//        // 关闭网络状态消息监听
+//        reachability.stopNotifier()
+//        // 移除网络状态消息通知
+//        NotificationCenter.default.removeObserver(self, name: ReachabilityChangedNotification, object: reachability)
+//        
+//        
+//    }
+//    
+//    // 主动检测网络状态，这个是个通知代理函数，不用去调用，会在收到通知后自动调用
+//     reachabilityChanged(note: NSNotification) {
+//        
+//        let reachability = note.object as! Reachability // 准备获取网络连接信息
+//        
+//        if reachability.isReachable { // 判断网络连接状态
+//            print("网络连接：可用")
+//            if reachability.isReachableViaWiFi { // 判断网络连接类型
+//                print("连接类型：WiFi")
+//            } else {
+//                print("连接类型：移动网络")
+//                // getHostAddrss_GPRS()  // 通过外网获取主机IP地址，并且初始化Socket并建立连接
+//            }
+//        } else {
+//            print("网络连接：不可用")
+//                }
+//    }
+//    
+// 
+//}
+//
 
 
 

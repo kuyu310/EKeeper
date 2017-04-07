@@ -19,7 +19,7 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
     
     
     
-    var tableView :UITableView!
+//    var tableView :UITableView!
     var Person : MessageTopCell!
     fileprivate weak var calendar: FSCalendar!
     var scrollContainer: UIScrollView!
@@ -28,15 +28,29 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
     var tableView2: UITableView!
     var tableView3: UITableView!
     
-    var segmentedTab : TTSegmentedControl!
-    var segmentIndex: Int = 0
+    
+    var segmentView:TransitionSegmentView?
+    
     
     
     fileprivate var dataSourceCount = 11
     //MARK:模拟数据
-    var baby = ["宝宝0","宝宝1","宝宝2","宝宝3","宝宝4","宝宝5","宝宝6","宝宝7","宝宝8","宝宝9","宝宝10","宝宝11"]
+    var baby = ["沈先生发起了一个任务",
+                "资金调拨申请",
+                "打款审批",
+                "请假审批",
+                "物品领用申请",
+                "资金调拨申请",
+                "打款审批",
+                "请假审批",
+                "物品领用申请",
+                "打款审批",
+                "打款审批",
+                "打款审批"]
     
-    var babyImage = ["宝宝0.jpg","宝宝1.jpg","宝宝2.jpg","宝宝3.jpg","宝宝4.jpg","宝宝5.jpg","宝宝6.jpg","宝宝7.jpg","宝宝8.jpg","宝宝9.jpg","宝宝10.jpg","宝宝11.jpg"]
+    var babyImage = ["sina_点评","sina_好友圈","sina_更多","sina_点评","sina_点评",
+                     "sina_好友圈","sina_好友圈","sina_更多","sina_更多","sina_好友圈",
+                     "sina_点评","sina_好友圈"]
     
     
     
@@ -60,30 +74,25 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
         return panGesture
         }()
     //MARK: 配置分段按钮栏 limeng
-    func configSegment() -> TTSegmentedControl{
+    func configSegment()  {
         
-        let segmentedC1 = TTSegmentedControl()
-        segmentedC1.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: 38)
-        segmentedC1.itemTitles = ["任务","消息","@我"]
-        segmentedC1.allowChangeThumbWidth = false
-        segmentedC1.selectedTextFont = UIFont.systemFont(ofSize: 12, weight: 0.3)
-        segmentedC1.defaultTextFont = UIFont.systemFont(ofSize: 12, weight: 0.01)
-        segmentedC1.cornerRadius = 0
-        segmentedC1.useGradient = true
-        segmentedC1.useShadow = false
         
-        segmentedC1.thumbGradientColors = [ UIColor.flatYellow , UIColor.flatYellow]
-        segmentedC1.containerBackgroundColor = UIColor.flatSandDark
         
-        segmentedC1.didSelectItemWith = { (index, title) -> () in
-            
-            self.segmentIndex = index
+        let titles:[String] = ["任务","消息","@我"]
+        let rect = CGRect(x:0,y:64,width:ScreenWidth,height:35)
+        let configure = SegmentConfigure(textSelColor:UIColor.flatWhite, highlightColor:UIColor.flatSandDark,titles:titles)
+        segmentView = TransitionSegmentView.init(frame: rect, configure: configure)
+
+        ///segment的label被点击时调用
+        segmentView?.setScrollClosure(tempClosure: { (index) in
             
             let point = CGPoint(x:CGFloat(index)*ScreenWidth,y:0)
             self.scrollContainer?.setContentOffset(point, animated: true)
             
-        }
-        return segmentedC1
+        })
+        
+      
+        
     }
     //MARK:配置scroll视图容器
     func configScrollView()  {
@@ -106,9 +115,9 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
         
         //添加子控制器
         
-        tableView1.backgroundColor = UIColor.flatSand
+        tableView1.backgroundColor = UIColor.flatGray
         tableView2.backgroundColor = UIColor.flatGray
-        tableView3.backgroundColor = UIColor.flatGreen
+        tableView3.backgroundColor = UIColor.flatGray
         
         tableView1.tag = 101
         tableView2.tag = 102
@@ -174,9 +183,9 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
         Person.frame = headerFrame
         
         //设置segment
-        segmentedTab = configSegment()
+        configSegment()
         Person.backgroundColor = UIColor.flatSand
-        Person.addSubview(segmentedTab)
+        Person.addSubview(segmentView!)
         view.addSubview(Person)
         //配置scrollview
         configScrollView()
@@ -253,8 +262,6 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
     }
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         
-        //        let shouldBegin = self.scrollContainer.contentOffset.y <= -self.scrollContainer.contentInset.top
-        
         let shouldBegin = self.scrollContainer.contentOffset.y <= -self.scrollContainer.contentInset.top
         if shouldBegin {
             let velocity = self.scopeGesture.velocity(in: self.view)
@@ -316,7 +323,7 @@ extension MessageViewController {
         tableView1.addPullToRefresh(PullToRefresh()) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount = 20
+                self?.dataSourceCount = 11
                 self?.tableView1.endRefreshing(at: .top)
             }
         }
@@ -324,7 +331,7 @@ extension MessageViewController {
         tableView1.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount += 20
+                self?.dataSourceCount += 11
                 self?.tableView1.reloadData()
                 self?.tableView1.endRefreshing(at: .bottom)
             }
@@ -334,7 +341,7 @@ extension MessageViewController {
         tableView2.addPullToRefresh(PullToRefresh()) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount = 20
+                self?.dataSourceCount = 11
                 self?.tableView2.endRefreshing(at: .top)
             }
         }
@@ -342,7 +349,7 @@ extension MessageViewController {
         tableView2.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount += 20
+                self?.dataSourceCount += 11
                 self?.tableView2.reloadData()
                 self?.tableView2.endRefreshing(at: .bottom)
             }
@@ -354,7 +361,7 @@ extension MessageViewController {
         tableView3.addPullToRefresh(PullToRefresh()) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount = 20
+                self?.dataSourceCount = 11
                 self?.tableView3.endRefreshing(at: .top)
             }
         }
@@ -362,7 +369,7 @@ extension MessageViewController {
         tableView3.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
             let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             DispatchQueue.main.asyncAfter(deadline: delayTime) {
-                self?.dataSourceCount += 20
+                self?.dataSourceCount += 11
                 self?.tableView3.reloadData()
                 self?.tableView3.endRefreshing(at: .bottom)
             }
@@ -384,11 +391,12 @@ extension MessageViewController: UITableViewDataSource ,UITableViewDelegate{
     }
     //绘制cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(tableView.tag)
         let initIdentifier = "Cell"
         let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: initIdentifier)
         //下面两个属性对应subtitle
         cell.textLabel?.text = baby[indexPath.row]
-        cell.detailTextLabel?.text = "baby\(indexPath.row)"
+        cell.detailTextLabel?.text = "这个是个测试流程\(indexPath.row)"
         
         //添加照片
         cell.imageView?.image = UIImage(named: babyImage[indexPath.row])
@@ -397,15 +405,9 @@ extension MessageViewController: UITableViewDataSource ,UITableViewDelegate{
         //        修改样式
         cell.selectedBackgroundView = UIView()
         cell.selectedBackgroundView?.backgroundColor = UIColor.flatSand
-        
-        
+ 
         return cell
     }
-    
-    
-    
-    
-    
     
     
     
@@ -416,16 +418,14 @@ extension MessageViewController: UITableViewDataSource ,UITableViewDelegate{
 }
 //scrollview的委托
 extension MessageViewController:UIScrollViewDelegate{
-    
-    
     //scollview滑动代理
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let point = scrollView.contentOffset
-        //let num = point.x/ScreenWidth
-        
-        //segmentedTab.selectItemAt(index: Int(num), animated: true)
-        
+        if point.y ==  0  && point.x != 0 {
+            
+        segmentView?.segmentWillMove(point: point)
+        }
         
     }
     
@@ -439,16 +439,9 @@ extension MessageViewController:UIScrollViewDelegate{
     //scollview停止减速代理
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         
-        //        let point = CGPoint(x:CGFloat(index)*ScreenWidth,y:0)
-        //        self.scrollContainer?.setContentOffset(point, animated: true)
-        //
-        //
         let point = scrollView.contentOffset
-        
-        let num = point.x/ScreenWidth
-        if self.segmentIndex != Int(num) {
-            
-            segmentedTab.selectItemAt(index: Int(num), animated: true)
+        if point.y ==  0{
+            segmentView?.segmentDidEndMove(point: point)
         }
         
     }

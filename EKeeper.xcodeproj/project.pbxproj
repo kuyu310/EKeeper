@@ -42,9 +42,7 @@
 		E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */; };
 		E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */; };
 		E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */; };
-		E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */; };
 		E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */; };
-		E43233FC1E8CB0DF00C980D2 /* RCinterfacePackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */; };
 		E43233FF1E8CB23A00C980D2 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43233FE1E8CB23A00C980D2 /* common.swift */; };
 		E43234011E8CB3FD00C980D2 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234001E8CB3FD00C980D2 /* SafariServices.framework */; };
 		E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234021E8CB40900C980D2 /* Photos.framework */; };
@@ -71,7 +69,7 @@
 		E432342D1E8CB4D800C980D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342C1E8CB4D800C980D2 /* AVFoundation.framework */; };
 		E432342F1E8CB4E300C980D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */; };
 		E43234311E8CB4EB00C980D2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */; };
-		E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234331E8CBBF200C980D2 /* AlamofireEx.swift */; };
+		E43234341E8CBBF200C980D2 /* AlamofireEx(废弃).swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234331E8CBBF200C980D2 /* AlamofireEx(废弃).swift */; };
 		E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */; };
 		E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */; };
 		E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43234511E8CF9C600C980D2 /* ESTabBar.swift */; };
@@ -140,6 +138,10 @@
 		E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116821E8DF95B00A0D75E /* MessageViewController.swift */; };
 		E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */; };
 		E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D116891E8DFBA400A0D75E /* NHKeyboard.m */; };
+		E4F3EAC51E97153600FF3B08 /* TransitionSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */; };
+		E4F3EAD51E97156400FF3B08 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */; };
+		E4F3EADA1E973C1C00FF3B08 /* RCServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAD91E973C1C00FF3B08 /* RCServerManager.swift */; };
+		E4F3EADC1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EADB1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -366,9 +368,7 @@
 		E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
-		E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
-		E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCinterfacePackage.swift; path = ThirdPartyEncapsulation/RCinterfacePackage.swift; sourceTree = "<group>"; };
 		E43233FE1E8CB23A00C980D2 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		E43234001E8CB3FD00C980D2 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		E43234021E8CB40900C980D2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -395,7 +395,7 @@
 		E432342C1E8CB4D800C980D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E432342E1E8CB4E300C980D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E43234301E8CB4EB00C980D2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		E43234331E8CBBF200C980D2 /* AlamofireEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireEx.swift; sourceTree = "<group>"; };
+		E43234331E8CBBF200C980D2 /* AlamofireEx(废弃).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireEx(废弃).swift"; sourceTree = "<group>"; };
 		E43234371E8CEEFB00C980D2 /* KeeperBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeeperBaseViewController.swift; path = "View/Main/主控制器/KeeperBaseViewController.swift"; sourceTree = "<group>"; };
 		E43234411E8CF4E100C980D2 /* KeeperMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperMainViewController.swift; sourceTree = "<group>"; };
 		E43234511E8CF9C600C980D2 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
@@ -500,6 +500,10 @@
 		E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4D116881E8DFBA400A0D75E /* NHKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHKeyboard.h; sourceTree = "<group>"; };
 		E4D116891E8DFBA400A0D75E /* NHKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKeyboard.m; sourceTree = "<group>"; };
+		E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSegmentView.swift; sourceTree = "<group>"; };
+		E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E4F3EAD91E973C1C00FF3B08 /* RCServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCServerManager.swift; sourceTree = "<group>"; };
+		E4F3EADB1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RCinterfacePackage（废弃）.swift"; path = "ThirdPartyEncapsulation/RCinterfacePackage（废弃）.swift"; sourceTree = "<group>"; };
 		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -821,7 +825,6 @@
 				E43233DD1E8CAE9A00C980D2 /* UIImage + Extension.swift */,
 				E43233DE1E8CAE9A00C980D2 /* UIImage+Extensions.swift */,
 				E43233DF1E8CAE9A00C980D2 /* UIImageView+WebImage.swift */,
-				E43233E01E8CAE9A00C980D2 /* UIView+Extension.swift */,
 				E43233E11E8CAE9A00C980D2 /* UpImageDownTextButton.swift */,
 			);
 			path = ExtensionSwift;
@@ -830,7 +833,7 @@
 		E43233FA1E8CAFFC00C980D2 /* ThirdPartyEncapsulation(第三方封装) */ = {
 			isa = PBXGroup;
 			children = (
-				E43233FB1E8CB0DF00C980D2 /* RCinterfacePackage.swift */,
+				E4F3EADB1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift */,
 			);
 			name = "ThirdPartyEncapsulation(第三方封装)";
 			sourceTree = "<group>";
@@ -846,7 +849,8 @@
 		E43234321E8CBBD600C980D2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E43234331E8CBBF200C980D2 /* AlamofireEx.swift */,
+				E43234331E8CBBF200C980D2 /* AlamofireEx(废弃).swift */,
+				E4F3EAD91E973C1C00FF3B08 /* RCServerManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -854,6 +858,8 @@
 		E432344C1E8CF67C00C980D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */,
+				E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */,
 				E48228FB1E9283BB009887AE /* MessageTopCell.swift */,
 				E4D116821E8DF95B00A0D75E /* MessageViewController.swift */,
 				E48228F91E927658009887AE /* MessageTopCell.xib */,
@@ -1461,7 +1467,6 @@
 				E43233EB1E8CAE9A00C980D2 /* UIScreen+CZAddition.m in Sources */,
 				E47189A11E9151840028AD70 /* FSCalendarCalculator.m in Sources */,
 				E43233E81E8CAE9A00C980D2 /* UIButton+CZAddition.m in Sources */,
-				E43233FC1E8CB0DF00C980D2 /* RCinterfacePackage.swift in Sources */,
 				E43234691E8CFC7F00C980D2 /* ExampleBasicContentView.swift in Sources */,
 				E471899F1E9151840028AD70 /* FSCalendar.m in Sources */,
 				E43233E91E8CAE9A00C980D2 /* UIColor+CZAddition.m in Sources */,
@@ -1473,7 +1478,7 @@
 				E432345B1E8CF9C600C980D2 /* ESTabBarItemBadgeView.swift in Sources */,
 				E4ACE5421E8E685400C40AEA /* UIView+SnailUse.m in Sources */,
 				E47189A61E9151840028AD70 /* FSCalendarDelegationFactory.m in Sources */,
-				E43234341E8CBBF200C980D2 /* AlamofireEx.swift in Sources */,
+				E43234341E8CBBF200C980D2 /* AlamofireEx(废弃).swift in Sources */,
 				E43233FF1E8CB23A00C980D2 /* common.swift in Sources */,
 				E432337A1E8CABAE00C980D2 /* BabyOptions.m in Sources */,
 				E43233761E8CABAE00C980D2 /* BabyBluetooth.m in Sources */,
@@ -1498,6 +1503,7 @@
 				E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */,
 				E43233E71E8CAE9A00C980D2 /* NSString+CZPath.m in Sources */,
 				E4ACE5401E8E685400C40AEA /* UIScreen+Extend.m in Sources */,
+				E4F3EADA1E973C1C00FF3B08 /* RCServerManager.swift in Sources */,
 				E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */,
 				E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */,
 				E4ACE5191E8E65CB00C40AEA /* SnailImageLabel.m in Sources */,
@@ -1505,7 +1511,6 @@
 				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
 				E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */,
 				E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */,
-				E43233F81E8CAE9A00C980D2 /* UIView+Extension.swift in Sources */,
 				E47189AB1E9151840028AD70 /* FSCalendarStickyHeader.m in Sources */,
 				E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */,
 				E432345A1E8CF9C600C980D2 /* ESTabBarItem.swift in Sources */,
@@ -1516,16 +1521,19 @@
 				E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */,
 				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
 				E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */,
+				E4F3EADC1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift in Sources */,
 				E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */,
 				E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */,
 				E47189AD1E9151840028AD70 /* FSCalendarWeekdayView.m in Sources */,
 				E4D116811E8DF3FA00A0D75E /* AddressViewController.swift in Sources */,
 				E47189A81E9151840028AD70 /* FSCalendarExtensions.m in Sources */,
+				E4F3EAD51E97156400FF3B08 /* UIView+Extension.swift in Sources */,
 				E43233F21E8CAE9A00C980D2 /* UIBarButtonItem+Extension.swift in Sources */,
 				E4ACE5411E8E685400C40AEA /* UIView+Layout.m in Sources */,
 				E43233EA1E8CAE9A00C980D2 /* UILabel+CZAddition.m in Sources */,
 				E432337C1E8CABAE00C980D2 /* BabyRhythm.m in Sources */,
 				E432337B1E8CABAE00C980D2 /* BabyPeripheralManager.m in Sources */,
+				E4F3EAC51E97153600FF3B08 /* TransitionSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

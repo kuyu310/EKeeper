@@ -164,7 +164,7 @@ extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreen
     func fullScreenSet() -> SnailFullScreenView{
         
         let view = SnailFullScreenView()
-        view.frame.size = (UIApplication.shared.keyWindow?.size)!
+        view.frame.size = (UIApplication.shared.keyWindow?.frame.size)!
         
         var items:[SnailImageLabelItem] = []
         let array: [String] = ["文字", "照片视频", "头条文章", "红包", "直播", "更多", "点评", "好友圈", "音乐", "商品", "签到", "秒拍"]
