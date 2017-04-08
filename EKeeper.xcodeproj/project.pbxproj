@@ -111,9 +111,6 @@
 		E47189AE1E9151840028AD70 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E471899D1E9151840028AD70 /* Info.plist */; };
 		E48228FA1E927658009887AE /* MessageTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48228F91E927658009887AE /* MessageTopCell.xib */; };
 		E48228FC1E9283BB009887AE /* MessageTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48228FB1E9283BB009887AE /* MessageTopCell.swift */; };
-		E48229181E94DC06009887AE /* MessageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48229161E94DC06009887AE /* MessageTestViewController.swift */; };
-		E48229191E94DC06009887AE /* MessageTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48229171E94DC06009887AE /* MessageTestView.xib */; };
-		E482291E1E953788009887AE /* MessageTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482291D1E953787009887AE /* MessageTestView.swift */; };
 		E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */; };
 		E4ACE5181E8E65CB00C40AEA /* SnailFullScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5101E8E65CB00C40AEA /* SnailFullScreenView.m */; };
 		E4ACE5191E8E65CB00C40AEA /* SnailImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE5121E8E65CB00C40AEA /* SnailImageLabel.m */; };
@@ -138,10 +135,14 @@
 		E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116821E8DF95B00A0D75E /* MessageViewController.swift */; };
 		E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */; };
 		E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D116891E8DFBA400A0D75E /* NHKeyboard.m */; };
+		E4E1AD491E97E12C00AE5841 /* myUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E1AD481E97E12C00AE5841 /* myUIScrollView.swift */; };
 		E4F3EAC51E97153600FF3B08 /* TransitionSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */; };
 		E4F3EAD51E97156400FF3B08 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */; };
 		E4F3EADA1E973C1C00FF3B08 /* RCServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAD91E973C1C00FF3B08 /* RCServerManager.swift */; };
 		E4F3EADC1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EADB1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift */; };
+		E4F3EADF1E97503E00FF3B08 /* RCChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EADD1E97503E00FF3B08 /* RCChatListViewController.swift */; };
+		E4F3EAE01E97503E00FF3B08 /* RCChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F3EADE1E97503E00FF3B08 /* RCChatListViewController.xib */; };
+		E4F3EAE21E9751CC00FF3B08 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3EAE11E9751CC00FF3B08 /* ConversationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -459,9 +460,6 @@
 		E471899D1E9151840028AD70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48228F91E927658009887AE /* MessageTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTopCell.xib; sourceTree = "<group>"; };
 		E48228FB1E9283BB009887AE /* MessageTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopCell.swift; sourceTree = "<group>"; };
-		E48229161E94DC06009887AE /* MessageTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTestViewController.swift; sourceTree = "<group>"; };
-		E48229171E94DC06009887AE /* MessageTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTestView.xib; sourceTree = "<group>"; };
-		E482291D1E953787009887AE /* MessageTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTestView.swift; sourceTree = "<group>"; };
 		E4ACE50D1E8E65CB00C40AEA /* SnailCurtainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailCurtainView.h; sourceTree = "<group>"; };
 		E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailCurtainView.m; sourceTree = "<group>"; };
 		E4ACE50F1E8E65CB00C40AEA /* SnailFullScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailFullScreenView.h; sourceTree = "<group>"; };
@@ -500,10 +498,14 @@
 		E4D116851E8DFB4A00A0D75E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4D116881E8DFBA400A0D75E /* NHKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHKeyboard.h; sourceTree = "<group>"; };
 		E4D116891E8DFBA400A0D75E /* NHKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKeyboard.m; sourceTree = "<group>"; };
+		E4E1AD481E97E12C00AE5841 /* myUIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myUIScrollView.swift; sourceTree = "<group>"; };
 		E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSegmentView.swift; sourceTree = "<group>"; };
 		E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E4F3EAD91E973C1C00FF3B08 /* RCServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCServerManager.swift; sourceTree = "<group>"; };
 		E4F3EADB1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RCinterfacePackage（废弃）.swift"; path = "ThirdPartyEncapsulation/RCinterfacePackage（废弃）.swift"; sourceTree = "<group>"; };
+		E4F3EADD1E97503E00FF3B08 /* RCChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCChatListViewController.swift; sourceTree = "<group>"; };
+		E4F3EADE1E97503E00FF3B08 /* RCChatListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCChatListViewController.xib; sourceTree = "<group>"; };
+		E4F3EAE11E9751CC00FF3B08 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		FCFA9DEDDC8AD2416DB44BDE /* Pods-EKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EKeeper/Pods-EKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -858,14 +860,15 @@
 		E432344C1E8CF67C00C980D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4E1AD481E97E12C00AE5841 /* myUIScrollView.swift */,
+				E4F3EAE11E9751CC00FF3B08 /* ConversationViewController.swift */,
 				E4F3EAD41E97156400FF3B08 /* UIView+Extension.swift */,
 				E4F3EAC41E97153600FF3B08 /* TransitionSegmentView.swift */,
 				E48228FB1E9283BB009887AE /* MessageTopCell.swift */,
 				E4D116821E8DF95B00A0D75E /* MessageViewController.swift */,
 				E48228F91E927658009887AE /* MessageTopCell.xib */,
-				E48229161E94DC06009887AE /* MessageTestViewController.swift */,
-				E48229171E94DC06009887AE /* MessageTestView.xib */,
-				E482291D1E953787009887AE /* MessageTestView.swift */,
+				E4F3EADD1E97503E00FF3B08 /* RCChatListViewController.swift */,
+				E4F3EADE1E97503E00FF3B08 /* RCChatListViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1360,12 +1363,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F3EAE01E97503E00FF3B08 /* RCChatListViewController.xib in Resources */,
 				E46E7D6D1E8C836B00BDF6E2 /* LaunchScreen.storyboard in Resources */,
 				E48228FA1E927658009887AE /* MessageTopCell.xib in Resources */,
 				E46E7D6A1E8C836B00BDF6E2 /* Assets.xcassets in Resources */,
 				E4D116751E8DF21E00A0D75E /* main.json in Resources */,
 				E47189AE1E9151840028AD70 /* Info.plist in Resources */,
-				E48229191E94DC06009887AE /* MessageTestView.xib in Resources */,
 				E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1439,10 +1442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E482291E1E953788009887AE /* MessageTestView.swift in Sources */,
 				E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */,
 				E4ACE53E1E8E685400C40AEA /* UIColor+Extend.m in Sources */,
-				E48229181E94DC06009887AE /* MessageTestViewController.swift in Sources */,
 				E43234591E8CF9C600C980D2 /* ESTabBarController.swift in Sources */,
 				E4D1167D1E8DF3DA00A0D75E /* MineViewController.swift in Sources */,
 				E47189A51E9151840028AD70 /* FSCalendarConstants.m in Sources */,
@@ -1450,6 +1451,7 @@
 				E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */,
 				E47189A01E9151840028AD70 /* FSCalendarAppearance.m in Sources */,
 				E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */,
+				E4F3EADF1E97503E00FF3B08 /* RCChatListViewController.swift in Sources */,
 				E43234681E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift in Sources */,
 				E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */,
 				E432346D1E8CFC7F00C980D2 /* ExampleTipsContentView.swift in Sources */,
@@ -1501,12 +1503,14 @@
 				E4ACE54F1E8E921800C40AEA /* SnailQuickMaskPopups.m in Sources */,
 				E4ACE51B1E8E65CB00C40AEA /* SnailTooltipView.m in Sources */,
 				E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */,
+				E4E1AD491E97E12C00AE5841 /* myUIScrollView.swift in Sources */,
 				E43233E71E8CAE9A00C980D2 /* NSString+CZPath.m in Sources */,
 				E4ACE5401E8E685400C40AEA /* UIScreen+Extend.m in Sources */,
 				E4F3EADA1E973C1C00FF3B08 /* RCServerManager.swift in Sources */,
 				E43233EE1E8CAE9A00C980D2 /* Bundle+Extensions.swift in Sources */,
 				E432337D1E8CABAE00C980D2 /* BabySpeaker.m in Sources */,
 				E4ACE5191E8E65CB00C40AEA /* SnailImageLabel.m in Sources */,
+				E4F3EAE21E9751CC00FF3B08 /* ConversationViewController.swift in Sources */,
 				E43233F91E8CAE9A00C980D2 /* UpImageDownTextButton.swift in Sources */,
 				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
 				E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */,

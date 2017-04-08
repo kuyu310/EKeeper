@@ -16,17 +16,21 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="管理员，您好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrQ-I9-EES">
-                    <rect key="frame" x="22" y="8" width="135" height="21"/>
+                    <rect key="frame" x="81" y="10" width="135" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="大头贴" translatesAutoresizingMaskIntoConstraints="NO" id="AfR-4q-HH7">
+                    <rect key="frame" x="12" y="9" width="50" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今天是1月1日，你今天没有未处理的任务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztv-zV-Go1">
-                    <rect key="frame" x="22" y="29" width="310" height="21"/>
+                    <rect key="frame" x="81" y="45" width="310" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.24650145626745723" green="0.72669332106662665" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -39,4 +43,7 @@
             <point key="canvasLocation" x="398" y="891"/>
         </view>
     </objects>
+    <resources>
+        <image name="大头贴" width="200" height="200"/>
+    </resources>
 </document>

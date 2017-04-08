@@ -30,6 +30,9 @@
             
             loadAppInfo()
             //3，初始化融云
+            //初始化融云服务
+             RCServerManager.shareInstance.initRongClould()
+            
            
             
             

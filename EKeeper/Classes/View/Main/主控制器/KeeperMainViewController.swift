@@ -31,6 +31,8 @@ extension KeeperMainViewController{
         
         tabBar.shadowImage = UIImage(named: "transparent")
         tabBar.backgroundImage = UIImage(named: "background_dark")
+//        tabBar.alpha = 0.9
+        
         self.shouldHijackHandler = {
             tabbarController, viewController, index in
             if index == 2 {
@@ -41,10 +43,7 @@ extension KeeperMainViewController{
         
         self.didHijackHandler = {
            [weak tabBarController] tabbarController, viewController, index in
-//           guard let hotKeyInfo_temp = self.hotKeyInfo
-//           else{
-//                return
-//            }
+
             self.showFullPopView()
             
         }
