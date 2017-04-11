@@ -19,6 +19,18 @@
 #import "NHKeyboard.h"
 #import "UIView+SnailUse.h"
 
+
+#import <WeexSDK/WXSDKEngine.h>
+#import <WeexSDK/WXSDKInstance.h>
+#import <WeexSDK/WXLog.h>
+#import <WeexSDK/WXAppConfiguration.h>
+#import  <WeexSDK/WeexSDK.h>
+#import <TBWXDevtool/WXDevtool.h> //TBWXdevtool是包的名称
+
+
+#import "WXEventModule.h"
+
+
 #import "FSCalendar.h"
 
 

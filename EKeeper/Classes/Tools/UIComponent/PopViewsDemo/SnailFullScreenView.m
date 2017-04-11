@@ -40,24 +40,26 @@
 - (instancetype)init {
     if (self = [super init]) {
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selfWhenTapped:)]];
-        _dateLabel = [UILabel new];
-        _dateLabel.font = [UIFont fontWithName:@"Heiti SC" size:42];
-        _dateLabel.textColor = [UIColor r:21 g:21 b:21];
-        _dateLabel.textColor = [UIColor blackColor];
-        [self addSubview:_dateLabel];
-        
-        _weekLabel = [UILabel new];
-        _weekLabel.numberOfLines = 0;
-        _weekLabel.font = [UIFont fontWithName:@"Heiti SC" size:12];
-        _weekLabel.textColor = [UIColor r:56 g:56 b:56];
-        [self addSubview:_weekLabel];
+//        _dateLabel = [UILabel new];
+//        _dateLabel.font = [UIFont fontWithName:@"Heiti SC" size:42];
+//        _dateLabel.textColor = [UIColor r:21 g:21 b:21];
+//        _dateLabel.textColor = [UIColor blackColor];
+//        [self addSubview:_dateLabel];
+//        
+//        _weekLabel = [UILabel new];
+//        _weekLabel.numberOfLines = 0;
+//        _weekLabel.font = [UIFont fontWithName:@"Heiti SC" size:12];
+//        _weekLabel.textColor = [UIColor r:56 g:56 b:56];
+//        [self addSubview:_weekLabel];
         
         _advertisementView = [UIButton new];
         [_advertisementView addTarget:self action:@selector(advertisementClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_advertisementView];
         
         _closeButton = [UIButton new];
-        _closeButton.backgroundColor = [UIColor whiteColor];
+        
+        
+        _closeButton.backgroundColor = [UIColor clearColor];
         _closeButton.userInteractionEnabled = NO;
         [_closeButton addTarget:self action:@selector(closeClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_closeButton];
@@ -65,7 +67,7 @@
         _closeIcon = [UIButton new];
         _closeIcon.userInteractionEnabled = NO;
         _closeIcon.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [_closeIcon setImage:[UIImage imageNamed:@"sina_关闭"] forState:UIControlStateNormal];
+        [_closeIcon setImage:[UIImage imageNamed:@"sina_更多"] forState:UIControlStateNormal];
         [self addSubview:_closeIcon];
         
         [self setContent];
@@ -94,9 +96,9 @@
     _advertisementView.right = [UIScreen width] - 15;
     _advertisementView.centerY = _dateLabel.bottom;
     
-    _closeButton.size = CGSizeMake([UIScreen width], 44);
+    _closeButton.size = CGSizeMake([UIScreen width], 80);
     _closeButton.bottom = [UIScreen height];
-    _closeIcon.size = CGSizeMake(30, 30);
+    _closeIcon.size = CGSizeMake(64, 64);
     _closeIcon.center = _closeButton.center;
     [UIView animateWithDuration:0.5 animations:^{
         _closeIcon.transform = CGAffineTransformMakeRotation(M_PI_4);
@@ -168,7 +170,7 @@
                 [item setItem:items[item.tag]];
                 item.imgView.userInteractionEnabled = NO;
                 item.textLabel.font = [UIFont systemFontOfSize:14];
-                item.textLabel.textColor = [UIColor r:82 g:82 b:82];
+                item.textLabel.textColor = [UIColor whiteColor];
             }
             
             item.alpha = 0;

@@ -122,14 +122,10 @@
                 DispatchQueue.global().async {
                     // 1> url
                     let url = Bundle.main.path(forResource: "main", ofType: "json")
-                    
-                    
+
                     // 2> data
                     let data = NSData(contentsOf: URL(fileURLWithPath: url!))
-                    
                     // 3> 写入磁盘
-                    
-                    
                     let docDir = ActionedPath
                     let jsonPath = (docDir).appendingPathComponent("main.json")
                     

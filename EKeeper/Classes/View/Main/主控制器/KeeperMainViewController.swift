@@ -108,7 +108,10 @@ extension KeeperMainViewController {
         let vc = cls.init()
         
         vc.title = title
-        
+        if clsName == "WorksViewController" {
+            
+           (vc as! WorksViewController).url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+        }
         // 设置控制器的访客信息字典
         vc.visitorInfoDictionary = visitorDict
         
@@ -151,11 +154,11 @@ extension KeeperMainViewController: SnailQuickMaskPopupsDelegate,SnailFullScreen
         let v = fullScreenSet()
          v.delegate = self
  
-         popups = SnailQuickMaskPopups(maskStyle: MaskStyle.whiteBlur, aView: v)
+         popups = SnailQuickMaskPopups(maskStyle: MaskStyle.blackBlur, aView: v)
          popups.isDismissedOppositeDirection  = true
          popups.isAllowPopupsDrag = false
-        
-         popups.dampingRatio = 0.5
+         popups.transitionStyle = TransitionStyle.crossDissolve
+         popups.dampingRatio = 0.3
          popups.present(animated: true, completion: nil)
         
      }

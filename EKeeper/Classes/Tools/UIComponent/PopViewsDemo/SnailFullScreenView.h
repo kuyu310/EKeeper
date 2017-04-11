@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #define _rowCount   3   // 默认每行显示3个
-#define _rows       2   // 默认每页显示2行
+#define _rows       1   // 默认每页显示2行
 #define _pages      2   // 共多少页
 
 @protocol SnailFullScreenViewDelegate;

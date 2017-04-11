@@ -51,6 +51,15 @@ class KeeperNavigationController: UINavigationController {
                     title = childViewControllers.first?.title ?? "返回"
                 }
                 navigationBar.isHidden = false
+                
+                // 1> 设置 navBar 整个背景的渲染颜色
+                navigationBar.barTintColor = UIColor.flatSkyBlueDark
+                // 2> 设置 navBar 的字体颜色
+                navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
+                // 3> 设置系统按钮的文字渲染颜色
+                navigationBar.tintColor = UIColor.flatWhite
+                
+                
                 viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: self, action: #selector(popToParent))
                 
             }

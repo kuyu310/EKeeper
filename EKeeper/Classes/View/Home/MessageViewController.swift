@@ -157,7 +157,9 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
             1:[String]([
                 "请假申请",
                 "业务流程修正",
-                "病假"])
+                "病假",
+                "请假申请",
+                "业务流程修正"])
         ]
         
         self.adHeaders = [
@@ -173,6 +175,8 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
             1:[String]([
                 "请假申请33",
                 "业务流程修正33",
+                "请假申请",
+                "业务流程修正",
                 "病假33"])
         ]
         
@@ -314,6 +318,8 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
         scrollContainer?.showsHorizontalScrollIndicator = true
         scrollContainer?.delegate = self
         scrollContainer?.isPagingEnabled = true
+//        反弹效果取消，
+        scrollContainer.bounces = false
         
         
         self.view.addSubview(scrollContainer!)
@@ -426,9 +432,6 @@ class MessageViewController: KeeperBaseViewController,SnailCurtainViewDelegate,S
 
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        
-        
-        
         
         let shouldBegin = self.scrollContainer.contentOffset.y <= -self.scrollContainer.contentInset.top
 //        手势向下传递
@@ -630,22 +633,7 @@ extension MessageViewController: UITableViewDataSource ,UITableViewDelegate{
         return 0.1
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor.flatGray
-//        let titleLabel = UILabel()
-//        if tableView.tag  == 101 {
-//            titleLabel.text = self.adHeaders?[section]
-//        }
-//        else
-//        {
-//            
-//            titleLabel.text = self.adHeaders3?[section]
-//        }
-//        titleLabel.textColor = UIColor.white
-//        titleLabel.sizeToFit()
-//        titleLabel.center = CGPoint(x: self.view.frame.width/2, y: 20)
-//        headerView.addSubview(titleLabel)
-//        return headerView
+
         var view:UIView = UIView(frame: CGRect.zero)
         view.backgroundColor = UIColor(red: 0xf0/255.0, green: 0xf0/255.0 , blue: 0xf6/255.0 , alpha: 1.0)
         
@@ -769,7 +757,7 @@ extension MessageViewController:UIScrollViewDelegate{
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         
         var point = scrollView.contentOffset
-        if point.y ==  0{
+        if point.y ==  0 && point.x != 0 {
             segmentView?.segmentDidEndMove(point: point)
         }
 
