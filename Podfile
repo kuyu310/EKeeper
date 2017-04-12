@@ -61,5 +61,9 @@ pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chamel
 pod 'TTSegmentedControl'
  pod 'SJFluidSegmentedControl', '~> 1.0'
  pod 'PullToRefresher', '~> 2.0'
+ pod "RMStepsController", "~> 1.0.2"
+ 
+# 可以左右滑动的cell
+
  
 end

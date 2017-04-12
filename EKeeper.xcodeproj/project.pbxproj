@@ -109,6 +109,8 @@
 		E47189AC1E9151840028AD70 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E471899A1E9151840028AD70 /* FSCalendarTransitionCoordinator.m */; };
 		E47189AD1E9151840028AD70 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E471899C1E9151840028AD70 /* FSCalendarWeekdayView.m */; };
 		E47189AE1E9151840028AD70 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E471899D1E9151840028AD70 /* Info.plist */; };
+		E4727C321E9E0D0E0089727E /* SubRMStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727C311E9E0D0E0089727E /* SubRMStepsController.swift */; };
+		E4727C4D1E9E1A7A0089727E /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4727C4C1E9E1A7A0089727E /* UITableView+EmptyData.m */; };
 		E48228FA1E927658009887AE /* MessageTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48228F91E927658009887AE /* MessageTopCell.xib */; };
 		E48228FC1E9283BB009887AE /* MessageTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48228FB1E9283BB009887AE /* MessageTopCell.swift */; };
 		E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */; };
@@ -134,6 +136,11 @@
 		E4B06DB11E9C559B00B5F71A /* WXImageLoaderDefaultImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B06DAB1E9C559B00B5F71A /* WXImageLoaderDefaultImplement.swift */; };
 		E4B06DB21E9C559B00B5F71A /* WXMapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B06DAC1E9C559B00B5F71A /* WXMapComponent.swift */; };
 		E4B06E601E9C73ED00B5F71A /* bundlejs in Resources */ = {isa = PBXBuildFile; fileRef = E4B06E5F1E9C73ED00B5F71A /* bundlejs */; };
+		E4B06E801E9CA87400B5F71A /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B06E7F1E9CA84C00B5F71A /* SwipeCellKit.framework */; };
+		E4B06E811E9CA87400B5F71A /* SwipeCellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4B06E7F1E9CA84C00B5F71A /* SwipeCellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4B06E8A1E9CB21900B5F71A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B06E891E9CB21900B5F71A /* Data.swift */; };
+		E4B06E9A1E9CC9F500B5F71A /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B06E991E9CC9F500B5F71A /* AddressCell.xib */; };
+		E4B06E9C1E9CCA1000B5F71A /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B06E9B1E9CCA1000B5F71A /* AddressCell.swift */; };
 		E4D116031E8D4CE100A0D75E /* KeeperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */; };
 		E4D1162D1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */; };
 		E4D116751E8DF21E00A0D75E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E4D116741E8DF21E00A0D75E /* main.json */; };
@@ -302,6 +309,20 @@
 			remoteGlobalIDString = E46E7D5E1E8C836B00BDF6E2;
 			remoteInfo = EKeeper;
 		};
+		E4B06E7E1E9CA84C00B5F71A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B06E7A1E9CA84C00B5F71A /* SwipeCellKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F234AC31E44A7A400E22A38;
+			remoteInfo = SwipeCellKit;
+		};
+		E4B06E821E9CA87400B5F71A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B06E7A1E9CA84C00B5F71A /* SwipeCellKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F234AC21E44A7A400E22A38;
+			remoteInfo = SwipeCellKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -313,6 +334,7 @@
 			files = (
 				E43233A91E8CAD0E00C980D2 /* Alamofire.framework in Embed Frameworks */,
 				E402AD821E8E5CCC00E2E25D /* pop.framework in Embed Frameworks */,
+				E4B06E811E9CA87400B5F71A /* SwipeCellKit.framework in Embed Frameworks */,
 				E43233AD1E8CAD1200C980D2 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -467,6 +489,9 @@
 		E471899B1E9151840028AD70 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		E471899C1E9151840028AD70 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		E471899D1E9151840028AD70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4727C311E9E0D0E0089727E /* SubRMStepsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubRMStepsController.swift; sourceTree = "<group>"; };
+		E4727C4B1E9E1A7A0089727E /* UITableView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyData.h"; sourceTree = "<group>"; };
+		E4727C4C1E9E1A7A0089727E /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
 		E48228F91E927658009887AE /* MessageTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTopCell.xib; sourceTree = "<group>"; };
 		E48228FB1E9283BB009887AE /* MessageTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopCell.swift; sourceTree = "<group>"; };
 		E4ACE50D1E8E65CB00C40AEA /* SnailCurtainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailCurtainView.h; sourceTree = "<group>"; };
@@ -507,6 +532,10 @@
 		E4B06DAB1E9C559B00B5F71A /* WXImageLoaderDefaultImplement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WXImageLoaderDefaultImplement.swift; path = Weex/WXImageLoaderDefaultImplement.swift; sourceTree = "<group>"; };
 		E4B06DAC1E9C559B00B5F71A /* WXMapComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WXMapComponent.swift; path = Weex/WXMapComponent.swift; sourceTree = "<group>"; };
 		E4B06E5F1E9C73ED00B5F71A /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundlejs; sourceTree = "<group>"; };
+		E4B06E7A1E9CA84C00B5F71A /* SwipeCellKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwipeCellKit.xcodeproj; path = "EKeeper/OtherFramework/SwipeCellKit-develop/SwipeCellKit.xcodeproj"; sourceTree = "<group>"; };
+		E4B06E891E9CB21900B5F71A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../Model/Data.swift; sourceTree = "<group>"; };
+		E4B06E991E9CC9F500B5F71A /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddressCell.xib; path = ../Home/AddressCell.xib; sourceTree = "<group>"; };
+		E4B06E9B1E9CCA1000B5F71A /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressCell.swift; path = ../Home/AddressCell.swift; sourceTree = "<group>"; };
 		E4D116021E8D4CE100A0D75E /* KeeperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperNavigationController.swift; sourceTree = "<group>"; };
 		E4D1162C1E8DE0D400A0D75E /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
 		E4D116741E8DF21E00A0D75E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -555,6 +584,7 @@
 				E432340D1E8CB43B00C980D2 /* MapKit.framework in Frameworks */,
 				E432340B1E8CB43400C980D2 /* OpenGLES.framework in Frameworks */,
 				E43234091E8CB42200C980D2 /* QuartzCore.framework in Frameworks */,
+				E4B06E801E9CA87400B5F71A /* SwipeCellKit.framework in Frameworks */,
 				E43234071E8CB41A00C980D2 /* SystemConfiguration.framework in Frameworks */,
 				E43234051E8CB41200C980D2 /* UIKit.framework in Frameworks */,
 				E43234031E8CB40900C980D2 /* Photos.framework in Frameworks */,
@@ -808,6 +838,8 @@
 		E43233BB1E8CAE9A00C980D2 /* AdditionsOC */ = {
 			isa = PBXGroup;
 			children = (
+				E4727C4B1E9E1A7A0089727E /* UITableView+EmptyData.h */,
+				E4727C4C1E9E1A7A0089727E /* UITableView+EmptyData.m */,
 				E43233BC1E8CAE9A00C980D2 /* CZAdditions.h */,
 				E43233BD1E8CAE9A00C980D2 /* NSArray+Log.h */,
 				E43233BE1E8CAE9A00C980D2 /* NSArray+Log.m */,
@@ -938,6 +970,7 @@
 		E46E7D561E8C836A00BDF6E2 = {
 			isa = PBXGroup;
 			children = (
+				E4B06E7A1E9CA84C00B5F71A /* SwipeCellKit.xcodeproj */,
 				E4B06E5F1E9C73ED00B5F71A /* bundlejs */,
 				E471897C1E9151840028AD70 /* FSCalendar */,
 				E402AD541E8E5AC300E2E25D /* pop.xcodeproj */,
@@ -1131,10 +1164,22 @@
 			name = Weex;
 			sourceTree = "<group>";
 		};
+		E4B06E7B1E9CA84C00B5F71A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4B06E7F1E9CA84C00B5F71A /* SwipeCellKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E4D116761E8DF34700A0D75E /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				E4B06E891E9CB21900B5F71A /* Data.swift */,
 				E4D116801E8DF3FA00A0D75E /* AddressViewController.swift */,
+				E4B06E991E9CC9F500B5F71A /* AddressCell.xib */,
+				E4B06E9B1E9CCA1000B5F71A /* AddressCell.swift */,
+				E4727C311E9E0D0E0089727E /* SubRMStepsController.swift */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1201,6 +1246,7 @@
 				E43233AB1E8CAD0E00C980D2 /* PBXTargetDependency */,
 				E43233AF1E8CAD1200C980D2 /* PBXTargetDependency */,
 				E402AD841E8E5CCC00E2E25D /* PBXTargetDependency */,
+				E4B06E831E9CA87400B5F71A /* PBXTargetDependency */,
 			);
 			name = EKeeper;
 			productName = EKeeper;
@@ -1295,6 +1341,10 @@
 				{
 					ProductGroup = E432338A1E8CACEB00C980D2 /* Products */;
 					ProjectRef = E43233891E8CACEB00C980D2 /* SnapKit.xcodeproj */;
+				},
+				{
+					ProductGroup = E4B06E7B1E9CA84C00B5F71A /* Products */;
+					ProjectRef = E4B06E7A1E9CA84C00B5F71A /* SwipeCellKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1419,6 +1469,13 @@
 			remoteRef = E43233A61E8CACEB00C980D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E4B06E7F1E9CA84C00B5F71A /* SwipeCellKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwipeCellKit.framework;
+			remoteRef = E4B06E7E1E9CA84C00B5F71A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1430,6 +1487,7 @@
 				E46E7D6D1E8C836B00BDF6E2 /* LaunchScreen.storyboard in Resources */,
 				E48228FA1E927658009887AE /* MessageTopCell.xib in Resources */,
 				E46E7D6A1E8C836B00BDF6E2 /* Assets.xcassets in Resources */,
+				E4B06E9A1E9CC9F500B5F71A /* AddressCell.xib in Resources */,
 				E4D116751E8DF21E00A0D75E /* main.json in Resources */,
 				E47189AE1E9151840028AD70 /* Info.plist in Resources */,
 				E46E7D681E8C836B00BDF6E2 /* Main.storyboard in Resources */,
@@ -1514,6 +1572,7 @@
 				E43233E61E8CAE9A00C980D2 /* NSString+CZHash.m in Sources */,
 				E43234381E8CEEFB00C980D2 /* KeeperBaseViewController.swift in Sources */,
 				E47189A01E9151840028AD70 /* FSCalendarAppearance.m in Sources */,
+				E4B06E9C1E9CCA1000B5F71A /* AddressCell.swift in Sources */,
 				E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */,
 				E4F3EADF1E97503E00FF3B08 /* RCChatListViewController.swift in Sources */,
 				E43234681E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift in Sources */,
@@ -1541,6 +1600,7 @@
 				E432345C1E8CF9C600C980D2 /* ESTabBarItemContainer.swift in Sources */,
 				E4ACE53F1E8E685400C40AEA /* UINavigationBar+BackgroundColor.m in Sources */,
 				E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */,
+				E4727C321E9E0D0E0089727E /* SubRMStepsController.swift in Sources */,
 				E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */,
 				E4B06D8D1E9B795700B5F71A /* NSString+Extension.swift in Sources */,
 				E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */,
@@ -1562,6 +1622,7 @@
 				E48228FC1E9283BB009887AE /* MessageTopCell.swift in Sources */,
 				E4ACE53D1E8E685400C40AEA /* UIAlertController+SnailUse.m in Sources */,
 				E46E7D631E8C836B00BDF6E2 /* AppDelegate.swift in Sources */,
+				E4727C4D1E9E1A7A0089727E /* UITableView+EmptyData.m in Sources */,
 				E47189A21E9151840028AD70 /* FSCalendarCell.m in Sources */,
 				E47189A31E9151840028AD70 /* FSCalendarCollectionView.m in Sources */,
 				E43233EC1E8CAE9A00C980D2 /* UIView+CZAddition.m in Sources */,
@@ -1597,6 +1658,7 @@
 				E432346B1E8CFC7F00C980D2 /* ExampleHighlightableContentView.swift in Sources */,
 				E4B06DA41E9C53FC00B5F71A /* WeexManager.swift in Sources */,
 				E4F3EADC1E97463F00FF3B08 /* RCinterfacePackage（废弃）.swift in Sources */,
+				E4B06E8A1E9CB21900B5F71A /* Data.swift in Sources */,
 				E432345D1E8CF9C600C980D2 /* ESTabBarItemContentView.swift in Sources */,
 				E4D116831E8DF95B00A0D75E /* MessageViewController.swift in Sources */,
 				E47189AD1E9151840028AD70 /* FSCalendarWeekdayView.m in Sources */,
@@ -1656,6 +1718,11 @@
 			isa = PBXTargetDependency;
 			target = E46E7D5E1E8C836B00BDF6E2 /* EKeeper */;
 			targetProxy = E46E7D7F1E8C836B00BDF6E2 /* PBXContainerItemProxy */;
+		};
+		E4B06E831E9CA87400B5F71A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			targetProxy = E4B06E821E9CA87400B5F71A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -98,15 +98,13 @@ extension KeeperBaseViewController {
     private func setupNavigationBar() {
         // 添加导航条
         view.addSubview(navigationBar)
-        
         // 将 item 设置给 bar
         navigationBar.items = [navItem]
-        
         // 1> 设置 navBar 整个背景的渲染颜色
         navigationBar.barTintColor = UIColor.flatSkyBlueDark
         // 2> 设置 navBar 的字体颜色
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
-            // 3> 设置系统按钮的文字渲染颜色
+        // 3> 设置系统按钮的文字渲染颜色
         navigationBar.tintColor = UIColor.orange
     }
 }
