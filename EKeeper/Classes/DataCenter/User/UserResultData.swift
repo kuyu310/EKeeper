@@ -12,5 +12,9 @@ class UserResultData: NSObject {
     var data:UserData?
     var status:String?
     
-  
+    override static func mj_objectClassInArray() -> [AnyHashable : Any]! {
+        return [
+            "data":UserData()
+        ]
+    }
 }
