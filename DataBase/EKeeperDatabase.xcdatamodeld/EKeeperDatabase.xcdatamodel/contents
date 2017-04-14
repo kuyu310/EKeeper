@@ -26,7 +26,7 @@
         <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="315"/>
         <element name="Department" positionX="-18" positionY="162" width="128" height="90"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="315"/>
     </elements>
 </model>

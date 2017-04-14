@@ -6,8 +6,11 @@
 //  Copyright © 2016年 yatou. All rights reserved.
 //
 
+
+
 import UIKit
 import Alamofire
+import SwiftyJSON
 class UserModel: BaseModel {
     var delegate:UserModelDelegate?
     
@@ -15,27 +18,36 @@ class UserModel: BaseModel {
     func requestLogin(Params params:Dictionary<String,Any>) {
         let URLString = urlPrefix + "/login"
         
-        
-        let sets=NSSet()
-        
-        
-        
          Alamofire.request(URLString, method: .get,  parameters: params, encoding: JSONEncoding.default).responseJSON {response in
-            let dic = response.data as! Dictionary<String, Any>
-            let status = dic["status"] as! String
-            if status == "ok" {
-                let user = UserData().mj_setKeyValues(dic["data"])
-                self.delegate?.loginSucc!(userData: user!)
-            }else{//请求失败  status=error
-                let errorObj = dic["error"]
-                let data = ErrorData.initWithError(obj: errorObj)
-                self.delegate?.loginFail!(error: data)
+           
+            
+            switch response.result.isSuccess{
+            case true:
+                if let value = response.result.value {
+                    
+                    let json = JSON(value)
+                    let status = json["status"].string
+                    if status == "ok" {
+                        let user = UserData().mj_setKeyValues(response.result.value)
+                        self.delegate?.loginSucc!(userData: user!)
+                    }else{//请求失败  status=error
+                        let errorObj = response.result.error
+                        let data = ErrorData.initWithError(obj: errorObj)
+                        self.delegate?.loginFail!(error: data)
+                    }
+                }
+                
+            case false:
+                print(response.result.error)
+                
             }
             
-        }
-    }
-}
+            
 
+        }
+}
+}
+//用户数据模型声明两个委托到外面
 @objc protocol UserModelDelegate {
     @objc optional func loginSucc(userData:UserData)
     @objc optional func loginFail(error:ErrorData)

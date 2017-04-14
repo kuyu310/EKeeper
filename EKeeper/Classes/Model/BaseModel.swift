@@ -10,7 +10,7 @@ import UIKit
 //import AFNetworking
 
 class BaseModel: NSObject {
-    let urlPrefix = "http://address.uduoo.com/"
+    let urlPrefix = "http://ojjpkscxv.bkt.clouddn.com/"
     
     
 }

@@ -9,9 +9,13 @@
 import Foundation
 
 class MineViewController: KeeperBaseViewController{
-    
+    let contactModel:ContactModel = ContactModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         self.view.backgroundColor = UIColor.randomColor()
         
         let bt = UIButton(frame: CGRect(x: 100, y: 100, width: 120, height: 50))
@@ -29,6 +33,16 @@ class MineViewController: KeeperBaseViewController{
         
         self.view.addSubview(bt)
         self.view.addSubview(bt2)
+        
+        let bt3 = UIButton(frame: CGRect(x: 100, y: 300, width: 120, height: 50))
+        bt3.setTitle("获取联系人（test）", for: UIControlState())
+        
+        bt3.backgroundColor = UIColor.flatBlueDark
+        bt3.addTarget(self, action: #selector(sugsturePassword3), for: .touchUpInside)
+        
+        
+        self.view.addSubview(bt3)
+        
         
         
     }
@@ -56,7 +70,10 @@ class MineViewController: KeeperBaseViewController{
     }
 
     
-    
+    func  sugsturePassword3() {
+        
+        contactModel.requestContactList()
+    }
     
     
     

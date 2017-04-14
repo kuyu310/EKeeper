@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 class ContactModel: BaseModel {
     var delegate:ContactModelDelegate?
     
@@ -16,30 +17,47 @@ class ContactModel: BaseModel {
     {
        
         weak var blockSelf =  self
-        let URLString = urlPrefix + "user/list"
-        let Parameter = [kToken:dataCenter.getToken() as Any]
+        let URLString = urlPrefix + "data.json"
+//       let Parameter = [kToken:dataCenter.getToken() as Any]
         
         
-        Alamofire.request(URLString, method: .get,  parameters: Parameter, encoding: JSONEncoding.default).responseJSON {response in
-            let dic = response.data as! Dictionary<String, Any>
-            let status = dic["status"] as! String
-            if status == "ok" {
-                let result = ContactRestultData.mj_object(withKeyValues: dic)
-                //如果userdata解析不出来，则使用循环手动解析成userdata。
-                let coverResult = blockSelf?.covertDataToArray(data: result!)
-                self.delegate?.requestContactListSucc!(result: coverResult!)
-            }else{//请求失败  status=error
-                let errorObj = dic["error"]
-                let data = ErrorData.initWithError(obj: errorObj)
-                self.delegate?.requestContactListFail!(error: data)
+//        Alamofire.request(URLString, method: .get,  parameters: nil, encoding: JSONEncoding.default).responseData {response in
+        
+        Alamofire.request(URLString).responseJSON {response in
+            
+            
+            switch response.result.isSuccess{
+                case true:
+                if let value = response.result.value {
+                   let json = JSON(value)
+                   let status = json["status"].string
+                    if status == "ok" {
+                        let result = ContactRestultData.mj_object(withKeyValues: response.result.value)
+                        //如果userdata解析不出来，则使用循环手动解析成userdata。
+                        let coverResult = blockSelf?.covertDataToArray(data: result!)
+                        self.delegate?.requestContactListSucc!(result: coverResult!)
+                    }else{//请求失败  status=error
+                        let errorObj = json["error"]
+                        let data = ErrorData.initWithError(obj: errorObj)
+                        self.delegate?.requestContactListFail!(error: data)
+                    }
+
+                }
+                
+            case false:
+               print(response.result.error)
+                
+                
+                
             }
-        }
+
+            
 
         
     }
     
 
-    
+    }
 
     
     //将请求到的数据转换成对应的数据类型
