@@ -1,9 +1,9 @@
 //
 //  User+CoreDataProperties.swift
-//  
+//  EKeeper
 //
-//  Created by caixiasun on 16/9/29.
-//
+//  Created by limeng on 2017/4/14.
+//  Copyright © 2017年 limeng. All rights reserved.
 //
 
 import Foundation
@@ -26,12 +26,13 @@ extension User {
     @NSManaged public var id: String?
     @NSManaged public var isLeave: Bool
     @NSManaged public var level: String?
+    @NSManaged public var levelId: Int32
     @NSManaged public var name: String?
     @NSManaged public var nickName: String?
     @NSManaged public var sex: Bool
     @NSManaged public var status: String?
     @NSManaged public var tel: String?
     @NSManaged public var token: String?
-    @NSManaged public var levelId: Int32
+    @NSManaged public var isGesturePassword: Bool
 
 }

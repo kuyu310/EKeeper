@@ -25,9 +25,9 @@ class GesturePasswordViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         
-        AppLock.set(controller: self, success: { (controller) in
-            print(controller.title as Any)
-        })
+//        AppLock.set(controller: self, success: { (controller) in
+//            print(controller.title as Any)
+//        })
 //        AppLock.verify(controller: self, success: { (controller) in
 //            print("success", controller.title as Any)
 //        }, forget: { (controller) in

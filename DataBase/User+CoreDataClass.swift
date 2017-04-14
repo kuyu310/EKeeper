@@ -1,9 +1,9 @@
 //
 //  User+CoreDataClass.swift
-//  
+//  EKeeper
 //
-//  Created by caixiasun on 16/9/29.
-//
+//  Created by limeng on 2017/4/14.
+//  Copyright © 2017年 limeng. All rights reserved.
 //
 
 import Foundation

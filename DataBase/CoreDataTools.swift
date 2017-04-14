@@ -30,9 +30,9 @@ class HandleCoreData: NSObject {
         let oneUser = NSEntityDescription.insertNewObject(forEntityName: EntityName, into:context) as! User
         
         //对象赋值
-        oneUser.userID = 2
-        oneUser.userEmail = "12345@163.com"
-        oneUser.userPwd = "123456"
+        oneUser.id = "2"
+        oneUser.email = "12345@163.com"
+        oneUser.token = "123456"
         
         //保存
         app.saveContext()
@@ -73,9 +73,9 @@ class HandleCoreData: NSObject {
             
             //遍历查询的结果
             for info:User in fetchedObjects{
-                print("userID = \(info.userID)")
-                print("userEmail = \(info.userEmail)")
-                print("userPwd = \(info.userPwd)")
+                print("userID = \(info.id)")
+                print("userEmail = \(info.email)")
+                print("userPwd = \(info.token)")
                 print("+++++++++++++++++++++++++")
             }
         }catch {
@@ -121,7 +121,7 @@ class HandleCoreData: NSObject {
             //遍历查询的结果
             for info:User in fetchedObjects{
                 //修改邮箱
-                info.userEmail = "xyq@163.com"
+                info.email = "xyq@163.com"
                 
                 //重新保存
                 app.saveContext()

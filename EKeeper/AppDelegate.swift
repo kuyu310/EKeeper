@@ -10,15 +10,26 @@
     import UserNotifications
     import SVProgressHUD
     import ChameleonFramework
-    
+    import CoreData
     @UIApplicationMain
     
 
-    class AppDelegate: UIResponder, UIApplicationDelegate{
+    class AppDelegate: UIResponder,UNUserNotificationCenterDelegate, UIApplicationDelegate{
         
         var window: UIWindow?
         
-        
+//        持久化存贮协调器
+        lazy var persistentContainer: NSPersistentContainer = {
+            
+            let container = NSPersistentContainer(name: "EKeeperDatabase")
+            container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+                if let error = error as NSError? {
+                    fatalError("Unresolved error \(error), \(error.userInfo)")
+                }
+            })
+            return container
+        }()
+
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
            
             
@@ -39,7 +50,8 @@
             
             //5. 初始化蓝牙模块
             
-            //6. 设置通知中心
+            //6. 设置通知中心\推送
+            self.initPush()
             addNotification()
             //7.加载广告或欢迎页，初始化windowkey
             window = UIWindow()
@@ -57,8 +69,101 @@
         
         }
         
+        
+        
+        //app将要入非活动状态时调用，在此期间，应用程序不接收消息或事件，比如来电话了；保存数据
+        func applicationWillResignActive(application: UIApplication) {
+            self.saveContext()
+        }
+        //app被推送到后台时调用，所以要设置后台继续运行，则在这个函数里面设置即可；保存数据
+        func applicationDidEnterBackground(application: UIApplication) {
+            self.saveContext()
+        }
+        
+        //app将要退出是被调用，通常是用来保存数据和一些退出前的清理工作；保存数据
+        func applicationWillTerminate(application: UIApplication) {
+            self.saveContext()
+        }
+        
+        
+        
+        
+        
+        
     }
     
+//MARK:    推送类接口
+    extension AppDelegate{
+        
+        //注册推送
+        func initPush()
+        {
+            if (kSystemVersionNum_Greater_Than_Or_Equal_To_10) {
+                // 使用 UNUserNotificationCenter 来管理通知
+                let center = UNUserNotificationCenter.current()
+                //监听回调事件
+                center.delegate = self;
+                
+                //iOS 10 使用以下方法注册，才能得到授权
+                center.requestAuthorization(options: [UNAuthorizationOptions.alert,UNAuthorizationOptions.badge], completionHandler: { (granted:Bool, error:Error?) -> Void in
+                    if (granted) {
+                        //点击允许
+                        print("注册通知成功")
+                        //获取当前的通知设置，UNNotificationSettings 是只读对象，不能直接修改，只能通过以下方法获取
+                        center.getNotificationSettings(completionHandler: { (settings:UNNotificationSettings) in
+                            print("huoqu")
+                        })
+                    } else {
+                        //点击不允许
+                        print("注册通知失败")
+                    }
+                })
+                UIApplication.shared.registerForRemoteNotifications()
+                
+            }
+        }
+        
+        //本地推送
+        func registerNotification(alerTime:Int) {
+            
+            // 使用 UNUserNotificationCenter 来管理通知
+            let center = UNUserNotificationCenter.current()
+            
+            //需创建一个包含待通知内容的 UNMutableNotificationContent 对象，注意不是 UNNotificationContent ,此对象为不可变对象。
+            let content = UNMutableNotificationContent()
+            content.title = NSString.localizedUserNotificationString(forKey: "Hello!", arguments: nil)
+            content.body = NSString.localizedUserNotificationString(forKey: "Hello_message_body", arguments: nil)
+            content.sound = UNNotificationSound.default()
+            
+            // 在 alertTime 后推送本地推送
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(alerTime), repeats: false)
+            let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger)
+            //添加推送成功后的处理！
+            center.add(request) { (error:Error?) in
+                let alert = UIAlertController(title: "本地通知", message: "成功添加推送", preferredStyle: .alert)
+                let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                alert.addAction(cancel)
+                UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
+        }
+        
+        
+        //当推送注册成功时 系统会回调以下方法 会得到一个 deviceToken
+        func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+            let token = String(data: deviceToken, encoding: .utf8)
+            print("push_token = ",token)
+            
+        }
+        //当推送注册失败时 系统会回调
+        func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+            
+        }
+        //当有消息推送到设备 并且点击消息启动app 时会回调 userInfo 就是服务器推送到客户端的数据
+        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+            
+        }
+        
+    }
     
     // MARK: - 设置应用程序额外信息
     extension AppDelegate {
@@ -138,7 +243,23 @@
             
  
     }
+//    for  coredata
     extension AppDelegate {
+        
+//        保存数据到上下文
+        func saveContext () {
+            let context = persistentContainer.viewContext
+            if context.hasChanges {
+                do {
+                    try context.save()
+                } catch {
+                    // Replace this implementation with code to handle the error appropriately.
+                    // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    let nserror = error as NSError
+                    fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                }
+            }
+        }
         
         
         

@@ -113,11 +113,14 @@
 		E4727C4D1E9E1A7A0089727E /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4727C4C1E9E1A7A0089727E /* UITableView+EmptyData.m */; };
 		E4727C501E9E6EAE0089727E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727C4E1E9E6EAE0089727E /* TableViewCell.swift */; };
 		E4727C511E9E6EAE0089727E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4727C4F1E9E6EAE0089727E /* TableViewCell.xib */; };
-		E4727CAA1E9F346B0089727E /* AdressListWithSwift3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4727CA51E9F346B0089727E /* AdressListWithSwift3.xcdatamodeld */; };
-		E4727CAC1E9F346B0089727E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CA81E9F346B0089727E /* User+CoreDataClass.swift */; };
-		E4727CAD1E9F346B0089727E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CA91E9F346B0089727E /* User+CoreDataProperties.swift */; };
+		E4727CAA1E9F346B0089727E /* EKeeperDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4727CA51E9F346B0089727E /* EKeeperDatabase.xcdatamodeld */; };
 		E4727CBA1EA04A520089727E /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CB91EA04A520089727E /* Lock.swift */; };
 		E4727CCA1EA04F1A0089727E /* GesturePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CC91EA04F1A0089727E /* GesturePasswordViewController.swift */; };
+		E4727CCC1EA082E90089727E /* CoreDataTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CCB1EA082E90089727E /* CoreDataTools.swift */; };
+		E4727CF11EA0BE690089727E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CED1EA0BE690089727E /* User+CoreDataClass.swift */; };
+		E4727CF21EA0BE690089727E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CEE1EA0BE690089727E /* User+CoreDataProperties.swift */; };
+		E4727CF31EA0BE690089727E /* Department+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CEF1EA0BE690089727E /* Department+CoreDataClass.swift */; };
+		E4727CF41EA0BE690089727E /* Department+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4727CF01EA0BE690089727E /* Department+CoreDataProperties.swift */; };
 		E48228FA1E927658009887AE /* MessageTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48228F91E927658009887AE /* MessageTopCell.xib */; };
 		E48228FC1E9283BB009887AE /* MessageTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48228FB1E9283BB009887AE /* MessageTopCell.swift */; };
 		E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ACE50E1E8E65CB00C40AEA /* SnailCurtainView.m */; };
@@ -499,11 +502,14 @@
 		E4727C4C1E9E1A7A0089727E /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
 		E4727C4E1E9E6EAE0089727E /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E4727C4F1E9E6EAE0089727E /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		E4727CA61E9F346B0089727E /* AdressListWithSwift3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdressListWithSwift3.xcdatamodel; sourceTree = "<group>"; };
-		E4727CA81E9F346B0089727E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E4727CA91E9F346B0089727E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E4727CA61E9F346B0089727E /* EKeeperDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EKeeperDatabase.xcdatamodel; sourceTree = "<group>"; };
 		E4727CB91EA04A520089727E /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		E4727CC91EA04F1A0089727E /* GesturePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GesturePasswordViewController.swift; sourceTree = "<group>"; };
+		E4727CCB1EA082E90089727E /* CoreDataTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTools.swift; sourceTree = "<group>"; };
+		E4727CED1EA0BE690089727E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E4727CEE1EA0BE690089727E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E4727CEF1EA0BE690089727E /* Department+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E4727CF01EA0BE690089727E /* Department+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E48228F91E927658009887AE /* MessageTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTopCell.xib; sourceTree = "<group>"; };
 		E48228FB1E9283BB009887AE /* MessageTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopCell.swift; sourceTree = "<group>"; };
 		E4ACE50D1E8E65CB00C40AEA /* SnailCurtainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailCurtainView.h; sourceTree = "<group>"; };
@@ -1084,9 +1090,12 @@
 		E4727C611E9F2F410089727E /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				E4727CA51E9F346B0089727E /* AdressListWithSwift3.xcdatamodeld */,
-				E4727CA81E9F346B0089727E /* User+CoreDataClass.swift */,
-				E4727CA91E9F346B0089727E /* User+CoreDataProperties.swift */,
+				E4727CED1EA0BE690089727E /* User+CoreDataClass.swift */,
+				E4727CEE1EA0BE690089727E /* User+CoreDataProperties.swift */,
+				E4727CEF1EA0BE690089727E /* Department+CoreDataClass.swift */,
+				E4727CF01EA0BE690089727E /* Department+CoreDataProperties.swift */,
+				E4727CCB1EA082E90089727E /* CoreDataTools.swift */,
+				E4727CA51E9F346B0089727E /* EKeeperDatabase.xcdatamodeld */,
 			);
 			path = DataBase;
 			sourceTree = SOURCE_ROOT;
@@ -1606,9 +1615,12 @@
 				E43233F71E8CAE9A00C980D2 /* UIImageView+WebImage.swift in Sources */,
 				E4F3EADF1E97503E00FF3B08 /* RCChatListViewController.swift in Sources */,
 				E43234681E8CFC7F00C980D2 /* ExampleBackgroundContentView.swift in Sources */,
+				E4727CF11EA0BE690089727E /* User+CoreDataClass.swift in Sources */,
 				E43233EF1E8CAE9A00C980D2 /* Color+Extension.swift in Sources */,
+				E4727CF41EA0BE690089727E /* Department+CoreDataProperties.swift in Sources */,
 				E4727C501E9E6EAE0089727E /* TableViewCell.swift in Sources */,
 				E432346D1E8CFC7F00C980D2 /* ExampleTipsContentView.swift in Sources */,
+				E4727CF31EA0BE690089727E /* Department+CoreDataClass.swift in Sources */,
 				E432345E1E8CF9C600C980D2 /* ESTabBarItemMoreContentView.swift in Sources */,
 				E47189A41E9151840028AD70 /* FSCalendarCollectionViewLayout.m in Sources */,
 				E47189AA1E9151840028AD70 /* FSCalendarScopeHandle.m in Sources */,
@@ -1632,7 +1644,6 @@
 				E4ACE53F1E8E685400C40AEA /* UINavigationBar+BackgroundColor.m in Sources */,
 				E4ACE5171E8E65CB00C40AEA /* SnailCurtainView.m in Sources */,
 				E4727C321E9E0D0E0089727E /* SubRMStepsController.swift in Sources */,
-				E4727CAC1E9F346B0089727E /* User+CoreDataClass.swift in Sources */,
 				E43234581E8CF9C600C980D2 /* ESTabBar.swift in Sources */,
 				E4B06D8D1E9B795700B5F71A /* NSString+Extension.swift in Sources */,
 				E4D116861E8DFB4A00A0D75E /* LoginViewController.swift in Sources */,
@@ -1661,7 +1672,6 @@
 				E4727CCA1EA04F1A0089727E /* GesturePasswordViewController.swift in Sources */,
 				E43233F61E8CAE9A00C980D2 /* UIImage+Extensions.swift in Sources */,
 				E43233781E8CABAE00C980D2 /* BabyCentralManager.m in Sources */,
-				E4727CAD1E9F346B0089727E /* User+CoreDataProperties.swift in Sources */,
 				E4ACE54F1E8E921800C40AEA /* SnailQuickMaskPopups.m in Sources */,
 				E4ACE51B1E8E65CB00C40AEA /* SnailTooltipView.m in Sources */,
 				E43233ED1E8CAE9A00C980D2 /* UIViewController+CZAddition.m in Sources */,
@@ -1678,15 +1688,17 @@
 				E43233E51E8CAE9A00C980D2 /* NSString+CZBase64.m in Sources */,
 				E43234421E8CF4E100C980D2 /* KeeperMainViewController.swift in Sources */,
 				E43233F41E8CAE9A00C980D2 /* UIDevice + Extension.swift in Sources */,
-				E4727CAA1E9F346B0089727E /* AdressListWithSwift3.xcdatamodeld in Sources */,
+				E4727CAA1E9F346B0089727E /* EKeeperDatabase.xcdatamodeld in Sources */,
 				E47189AB1E9151840028AD70 /* FSCalendarStickyHeader.m in Sources */,
 				E43233E41E8CAE9A00C980D2 /* NSObject+CZRuntime.m in Sources */,
 				E432345A1E8CF9C600C980D2 /* ESTabBarItem.swift in Sources */,
+				E4727CF21EA0BE690089727E /* User+CoreDataProperties.swift in Sources */,
 				E4B06DAE1E9C559B00B5F71A /* WXImgLoaderDefaultImpl.m in Sources */,
 				E4D1167B1E8DF3D100A0D75E /* WorksViewController.swift in Sources */,
 				E47189AC1E9151840028AD70 /* FSCalendarTransitionCoordinator.m in Sources */,
 				E43233E21E8CAE9A00C980D2 /* NSArray+Log.m in Sources */,
 				E43233F51E8CAE9A00C980D2 /* UIImage + Extension.swift in Sources */,
+				E4727CCC1EA082E90089727E /* CoreDataTools.swift in Sources */,
 				E4D1168A1E8DFBA400A0D75E /* NHKeyboard.m in Sources */,
 				E4B06DB11E9C559B00B5F71A /* WXImageLoaderDefaultImplement.swift in Sources */,
 				E43233E31E8CAE9A00C980D2 /* NSAttributedString+CZAdditon.m in Sources */,
@@ -2037,13 +2049,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E4727CA51E9F346B0089727E /* AdressListWithSwift3.xcdatamodeld */ = {
+		E4727CA51E9F346B0089727E /* EKeeperDatabase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E4727CA61E9F346B0089727E /* AdressListWithSwift3.xcdatamodel */,
+				E4727CA61E9F346B0089727E /* EKeeperDatabase.xcdatamodel */,
 			);
-			currentVersion = E4727CA61E9F346B0089727E /* AdressListWithSwift3.xcdatamodel */;
-			path = AdressListWithSwift3.xcdatamodeld;
+			currentVersion = E4727CA61E9F346B0089727E /* EKeeperDatabase.xcdatamodel */;
+			path = EKeeperDatabase.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

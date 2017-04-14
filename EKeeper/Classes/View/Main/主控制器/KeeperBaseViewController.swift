@@ -80,9 +80,7 @@ extension KeeperBaseViewController {
         automaticallyAdjustsScrollViewInsets = false
         
         setupNavigationBar()
-        
-//        WBNetworkManager.shared.userLogon ? setupTableView() : setupVisitorView()
-        
+      
         
     }
     
