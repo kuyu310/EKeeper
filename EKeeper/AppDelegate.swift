@@ -19,11 +19,10 @@
         var window: UIWindow?
         
         
-       
-        
-        
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
            
+            
+            
             //1.设置应用额外设置 及 启动预操作(判断版本更新main.json）
             setupAdditions()
             //2.判断沙箱动作，更新UI
@@ -45,6 +44,7 @@
             //7.加载广告或欢迎页，初始化windowkey
             window = UIWindow()
             window?.backgroundColor = UIColor.white
+//            window?.rootViewController = GesturePasswordViewController()
             window?.rootViewController = KeeperMainViewController()
             //8.异步从服务器加载应用程序信息(main.json)
             window?.makeKeyAndVisible()
@@ -137,6 +137,11 @@
             }
             
  
+    }
+    extension AppDelegate {
+        
+        
+        
     }
     
     
